@@ -54,8 +54,8 @@ class AssetRepository @Inject constructor(
 ) {
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
     private val statuses = HashMap<String, MutableStateFlow<PackStatus>>()
-    private val jobs = HashMap<String, Job>()
-    private var manifests = HashMap<String, AssetManifest>()
+    private val jobs = java.util.concurrent.ConcurrentHashMap<String, Job>()
+    private val manifests = java.util.concurrent.ConcurrentHashMap<String, AssetManifest>()
 
     private fun packDir(manifestId: String) = File(context.filesDir, "packs/$manifestId").apply { mkdirs() }
 
@@ -106,7 +106,9 @@ class AssetRepository @Inject constructor(
         if (jobs[manifestId]?.isActive == true) return
         val state = flowFor(manifestId).value.state
         dispatch(manifestId, if (state is DownloadState.Paused) DownloadEvent.Resume else DownloadEvent.Start)
-        jobs[manifestId] = scope.launch { download(manifest, vehicleId) }
+        val job = scope.launch(start = kotlinx.coroutines.CoroutineStart.LAZY) { download(manifest, vehicleId) }
+        jobs[manifestId] = job
+        job.start()
     }
 
     fun pause(manifestId: String) {
@@ -116,6 +118,7 @@ class AssetRepository @Inject constructor(
 
     private suspend fun download(manifest: AssetManifest, vehicleId: String) {
         val id = manifest.id
+        val myJob = kotlin.coroutines.coroutineContext[Job]
         val dir = packDir(id)
         val base = BuildConfig.API_BASE_URL.trimEnd('/')
         val modelUrl = base + (manifest.downloadUrls["android"] ?: "/v1/assets/$id/files/${manifest.fileName}")
@@ -149,7 +152,8 @@ class AssetRepository @Inject constructor(
         } catch (e: IOException) {
             if (scopeActive()) dispatch(id, DownloadEvent.Error("Download interrupted. Tap retry to resume."))
         } finally {
-            jobs.remove(id)
+            // Only clear our own entry: after pause + quick resume a newer job may already be registered.
+            myJob?.let { jobs.remove(id, it) }
         }
     }
 

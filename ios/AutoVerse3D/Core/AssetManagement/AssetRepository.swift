@@ -20,6 +20,7 @@ final class AssetRepository {
     private(set) var statuses: [String: PackStatus] = [:]
     @ObservationIgnored private var manifests: [String: AssetManifest] = [:]
     @ObservationIgnored private var tasks: [String: Task<Void, Never>] = [:]
+    @ObservationIgnored private var taskTokens: [String: UUID] = [:]
     @ObservationIgnored private let content: BundleContentRepository
     @ObservationIgnored private let manifestService: ManifestService
     @ObservationIgnored private let baseURL: URL
@@ -87,11 +88,14 @@ final class AssetRepository {
     func start(manifestId: String, vehicleId: String) {
         guard let m = manifests[manifestId], tasks[manifestId] == nil else { return }
         if case .paused = status(manifestId).state { dispatch(manifestId, .resume) } else { dispatch(manifestId, .start) }
-        tasks[manifestId] = Task { [weak self] in await self?.download(m, vehicleId: vehicleId) }
+        let token = UUID()
+        taskTokens[manifestId] = token
+        tasks[manifestId] = Task { [weak self] in await self?.download(m, vehicleId: vehicleId, token: token) }
     }
 
     func pause(manifestId: String) {
         tasks.removeValue(forKey: manifestId)?.cancel()
+        taskTokens[manifestId] = nil
         dispatch(manifestId, .pause)
     }
 
@@ -108,8 +112,9 @@ final class AssetRepository {
         URL(string: (path ?? fallback).trimmingCharacters(in: CharacterSet(charactersIn: "/")), relativeTo: baseURL)!.absoluteURL
     }
 
-    private func download(_ m: AssetManifest, vehicleId: String) async {
-        defer { tasks[m.id] = nil }
+    private func download(_ m: AssetManifest, vehicleId: String, token: UUID) async {
+        // Only clear our own entry: after pause + quick resume a newer task may already be registered.
+        defer { if taskTokens[m.id] == token { tasks[m.id] = nil; taskTokens[m.id] = nil } }
         guard let ios = m.platformVariants["ios"] else { return }
         let d = dir(m.id)
         let modelPart = d.appendingPathComponent(ios.fileName + ".part"), scenePart = d.appendingPathComponent(m.sceneDescriptor.fileName + ".part")
