@@ -47,6 +47,7 @@ _Last updated: 2026-11-19._ Legend: ✅ done and tested · 🟡 implemented, nee
 | Android `connectedDebugAndroidTest` (Pixel 10 Pro emulator, API 36.1) | 2/2 ✅ |
 | iOS `AutoVerse3DTests` (iPhone 17 Pro, iOS 26.1) | 17/17 ✅ |
 | iOS `AutoVerse3DUITests` | 2/2 ✅ (+ screenshot tours, opt-in) |
+| GitHub Actions CI (assets, backend, Android, iOS on Xcode 16.4) | ✅ all 4 jobs green |
 
 ## Asset approval status
 
