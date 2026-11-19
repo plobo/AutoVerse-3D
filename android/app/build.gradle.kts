@@ -94,6 +94,7 @@ dependencies {
     androidTestImplementation(libs.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.test.junit)
     androidTestImplementation(libs.androidx.test.runner)
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")
     androidTestImplementation(libs.hilt.android)
     kspAndroidTest(libs.hilt.compiler)
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.54")
