@@ -2,7 +2,7 @@ import XCTest
 
 /// Critical journeys: main navigation, open UrbanX, switch explorer modes, save a configuration.
 final class CoreJourneyUITests: XCTestCase {
-    private func launch() -> XCUIApplication {
+    @MainActor private func launch() -> XCUIApplication {
         let app = XCUIApplication()
         app.launchArguments = ["-uiTestingInMemoryStore"]
         app.launch()

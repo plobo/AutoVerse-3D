@@ -4,14 +4,14 @@ import XCTest
 final class ScreenshotTour: XCTestCase {
     private var dir: String? { ProcessInfo.processInfo.environment["SCREENSHOT_DIR"] }
 
-    private func snap(_ name: String, wait: TimeInterval = 1.5) {
+    @MainActor private func snap(_ name: String, wait: TimeInterval = 1.5) {
         Thread.sleep(forTimeInterval: wait)
         let shot = XCUIScreen.main.screenshot()
         let att = XCTAttachment(screenshot: shot); att.name = name; att.lifetime = .keepAlways; add(att)
         if let dir { try? shot.pngRepresentation.write(to: URL(fileURLWithPath: dir).appendingPathComponent("\(name).png")) }
     }
 
-    private func scrollUp(_ app: XCUIApplication, times: Int = 1) { for _ in 0..<times { app.swipeUp(velocity: .slow) } }
+    @MainActor private func scrollUp(_ app: XCUIApplication, times: Int = 1) { for _ in 0..<times { app.swipeUp(velocity: .slow) } }
 
     @MainActor
     func testTour() throws {
@@ -93,6 +93,7 @@ final class ScreenshotTour: XCTestCase {
     }
 }
 
+@MainActor
 extension XCUIElement {
     func clearAndType(_ text: String) {
         if let current = value as? String, !current.isEmpty {
