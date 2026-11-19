@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "vehicleId": "urbanx_suv",
+  "defaults": { "paintId": "glacier_white", "wheelId": "wheel_style_01", "trimId": "dark_trim", "interiorId": "interior_charcoal" },
+  "paints": [
+    { "id": "glacier_white", "name": "Glacier White", "hex": "#E9ECEF", "metallic": 0.1, "roughness": 0.35 },
+    { "id": "midnight_blue", "name": "Midnight Blue", "hex": "#1D2F5C", "metallic": 0.6, "roughness": 0.3 },
+    { "id": "ember_red", "name": "Ember Red", "hex": "#B3261E", "metallic": 0.4, "roughness": 0.3 },
+    { "id": "forest_green", "name": "Forest Green", "hex": "#2F5D45", "metallic": 0.5, "roughness": 0.35 },
+    { "id": "graphite_grey", "name": "Graphite Grey", "hex": "#4A4E54", "metallic": 0.7, "roughness": 0.3 },
+    { "id": "solar_yellow", "name": "Solar Yellow", "hex": "#E8B931", "metallic": 0.2, "roughness": 0.35 }
+  ],
+  "wheels": [
+    { "id": "wheel_style_01", "name": "Aero Five", "description": "Five broad spokes for low drag.", "nodeSuffix": "Rim01" },
+    { "id": "wheel_style_02", "name": "Mesh Ten", "description": "Ten slim spokes in a light mesh.", "nodeSuffix": "Rim02" },
+    { "id": "wheel_style_03", "name": "Turbine", "description": "Eight curved blades around a closed hub.", "nodeSuffix": "Rim03" }
+  ],
+  "trims": [
+    { "id": "dark_trim", "name": "Dark Trim", "hex": "#1C1E21", "metallic": 0.1, "roughness": 0.6 },
+    { "id": "satin_silver", "name": "Satin Silver", "hex": "#A9AEB4", "metallic": 0.9, "roughness": 0.35 },
+    { "id": "copper_accent", "name": "Copper Accent", "hex": "#B87333", "metallic": 0.9, "roughness": 0.3 }
+  ],
+  "interiors": [
+    { "id": "interior_charcoal", "name": "Charcoal", "hex": "#2B2D31", "metallic": 0.0, "roughness": 0.9 },
+    { "id": "interior_sand", "name": "Sand", "hex": "#C8B89A", "metallic": 0.0, "roughness": 0.9 },
+    { "id": "interior_cognac", "name": "Cognac", "hex": "#8A4B2A", "metallic": 0.0, "roughness": 0.8 }
+  ]
+}

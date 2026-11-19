@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoverse3d.example/schemas/component.schema.json",
+  "title": "Vehicle components, part animations and exploded views",
+  "type": "object",
+  "required": ["schemaVersion", "vehicleId", "components", "animations", "explodedViews", "modeVisibility"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "vehicleId": { "type": "string" },
+    "educationalDisclaimer": { "type": "string" },
+    "components": { "type": "array", "items": {
+      "type": "object",
+      "required": ["id", "vehicleId", "module", "name", "category", "nodeName", "description", "animationIds", "schemaVersion"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+        "vehicleId": { "type": "string" },
+        "module": { "enum": ["exterior", "mechanical"] },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "nodeName": { "type": "string", "pattern": "^[A-Za-z][A-Za-z0-9_]*$" },
+        "description": { "type": "string" },
+        "purpose": { "type": "string" },
+        "detail": { "type": "string" },
+        "animationIds": { "type": "array", "items": { "type": "string" } },
+        "schemaVersion": { "const": 1 }
+      }
+    }},
+    "animations": { "type": "array", "items": {
+      "type": "object",
+      "required": ["id", "type", "nodeName", "axis", "angleDeg", "durationSec"],
+      "properties": {
+        "id": { "type": "string" }, "type": { "const": "rotate" }, "nodeName": { "type": "string" },
+        "axis": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+        "angleDeg": { "type": "number" }, "durationSec": { "type": "number", "exclusiveMinimum": 0 }
+      }
+    }},
+    "explodedViews": { "type": "array", "items": {
+      "type": "object",
+      "required": ["id", "name", "durationSec", "offsets"],
+      "properties": {
+        "id": { "type": "string" }, "name": { "type": "string" }, "durationSec": { "type": "number" },
+        "offsets": { "type": "array", "items": { "type": "object", "required": ["nodeName", "offset"],
+          "properties": { "nodeName": { "type": "string" }, "offset": { "type": "array", "items": { "type": "number" }, "minItems": 3, "maxItems": 3 } } } }
+      }
+    }},
+    "modeVisibility": { "type": "object", "additionalProperties": { "type": "object", "required": ["hide"], "properties": { "hide": { "type": "array", "items": { "type": "string" } } } } }
+  }
+}

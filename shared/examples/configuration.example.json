@@ -1,0 +1,12 @@
+{
+  "id": "3f0c6a1e-2b7d-4f3a-9a52-6f0d2d3c1b11",
+  "vehicleId": "urbanx_suv",
+  "name": "Midnight UrbanX",
+  "paintId": "midnight_blue",
+  "wheelId": "wheel_style_02",
+  "trimId": "dark_trim",
+  "interiorId": "interior_sand",
+  "createdAt": "2026-11-18T10:00:00Z",
+  "updatedAt": "2026-11-18T10:00:00Z",
+  "schemaVersion": 1
+}

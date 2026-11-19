@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.1",
+  "vehicles": [
+    {
+      "id": "urbanx_suv",
+      "name": "UrbanX",
+      "category": "compact_suv",
+      "categoryLabel": "Compact urban SUV",
+      "description": "An original fictional compact SUV designed for city streets and weekend trips. UrbanX is the AutoVerse 3D reference vehicle.",
+      "assetManifestId": "urbanx_suv_v1",
+      "featureIds": ["exterior", "interior", "mechanical", "safety", "customization"],
+      "availability": "available",
+      "specs": [
+        { "label": "Length", "value": "4.30 m" },
+        { "label": "Width", "value": "1.82 m" },
+        { "label": "Height", "value": "1.66 m" },
+        { "label": "Wheelbase", "value": "2.60 m" },
+        { "label": "Seats", "value": "5" },
+        { "label": "Layout", "value": "Front engine, front-wheel drive" }
+      ],
+      "specsDisclaimer": "Fictional, illustrative figures for a fictional vehicle. Not real performance or homologation data.",
+      "schemaVersion": 1
+    },
+    {
+      "id": "terrax_4x4",
+      "name": "TerraX",
+      "category": "offroad_suv",
+      "categoryLabel": "Off-road SUV",
+      "description": "A fictional off-road SUV concept. Coming in a future content update.",
+      "assetManifestId": null,
+      "featureIds": [],
+      "availability": "coming_soon",
+      "specs": [],
+      "specsDisclaimer": "Concept only.",
+      "schemaVersion": 1
+    },
+    {
+      "id": "voltx_ev",
+      "name": "VoltX",
+      "category": "electric_vehicle",
+      "categoryLabel": "Electric vehicle",
+      "description": "A fictional battery-electric hatchback concept. Its powertrain concepts are already explained in the EV Lab.",
+      "assetManifestId": null,
+      "featureIds": ["ev"],
+      "availability": "coming_soon",
+      "specs": [],
+      "specsDisclaimer": "Concept only.",
+      "schemaVersion": 1
+    },
+    {
+      "id": "aerogt_coupe",
+      "name": "AeroGT",
+      "category": "sports_coupe",
+      "categoryLabel": "Sports coupe",
+      "description": "A fictional two-door sports coupe concept. Coming in a future content update.",
+      "assetManifestId": null,
+      "featureIds": [],
+      "availability": "coming_soon",
+      "specs": [],
+      "specsDisclaimer": "Concept only.",
+      "schemaVersion": 1
+    },
+    {
+      "id": "citycruiser_sedan",
+      "name": "CityCruiser",
+      "category": "family_sedan",
+      "categoryLabel": "Family sedan",
+      "description": "A fictional four-door family sedan concept. Coming in a future content update.",
+      "assetManifestId": null,
+      "featureIds": [],
+      "availability": "coming_soon",
+      "specs": [],
+      "specsDisclaimer": "Concept only.",
+      "schemaVersion": 1
+    }
+  ]
+}

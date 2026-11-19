@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "notes": "Orbit presets: eye = target + distance * (cos(pitch)*sin(yaw), sin(pitch), cos(pitch)*cos(yaw)); degrees; +Z is the vehicle front, +X the vehicle left, +Y up. Interior presets are first-person eye/lookAt pairs.",
+  "orbit": {
+    "limits": { "minDistance": 3.2, "maxDistance": 12.0, "minPitch": -5, "maxPitch": 89, "maxPan": 1.5 },
+    "presets": [
+      { "id": "three_quarter", "name": "Three-quarter", "yaw": 38, "pitch": 14, "distance": 7.0, "target": [0, 0.75, 0] },
+      { "id": "front", "name": "Front", "yaw": 0, "pitch": 6, "distance": 6.5, "target": [0, 0.75, 0] },
+      { "id": "side", "name": "Side", "yaw": 90, "pitch": 4, "distance": 7.0, "target": [0, 0.75, 0] },
+      { "id": "rear", "name": "Rear", "yaw": 180, "pitch": 8, "distance": 6.5, "target": [0, 0.75, 0] },
+      { "id": "top", "name": "Top", "yaw": 0, "pitch": 88, "distance": 8.0, "target": [0, 0.6, 0] }
+    ],
+    "default": "three_quarter"
+  },
+  "interior": {
+    "limits": { "maxYawOffset": 75, "maxPitchOffset": 40 },
+    "presets": [
+      { "id": "driver", "name": "Driver", "eye": [0.38, 1.18, 0.12], "lookAt": [0.38, 1.0, 1.6] },
+      { "id": "passenger", "name": "Passenger", "eye": [-0.38, 1.18, 0.12], "lookAt": [-0.2, 0.95, 1.6] },
+      { "id": "rear_seat", "name": "Rear seat", "eye": [0.32, 1.16, -0.82], "lookAt": [0.0, 0.95, 1.2] }
+    ],
+    "default": "driver"
+  }
+}

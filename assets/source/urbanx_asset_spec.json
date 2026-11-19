@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "assetId": "urbanx_suv_v1",
+  "description": "Machine-readable acceptance spec for the UrbanX model. Human-readable version: docs/ASSET_PIPELINE.md#urbanx-specification",
+  "units": "meters",
+  "upAxis": "Y",
+  "forwardAxis": "+Z",
+  "dimensions": { "length": 4.30, "width": 1.82, "height": 1.66, "wheelbase": 2.60, "tolerance": 0.08 },
+  "budgets": { "maxTriangles": 50000, "maxFileSizeBytes": 5000000, "maxMaterials": 40, "maxTextureDimension": 2048 },
+  "requiredNodes": [
+    "VehicleRoot", "Body", "Glass", "Wheels", "FrontLeft", "FrontRight", "RearLeft", "RearRight",
+    "Doors", "FrontLeftDoor", "FrontRightDoor", "RearLeftDoor", "RearRightDoor",
+    "Hood", "Trunk", "Lights", "Interior", "Chassis", "Suspension", "EngineOrMotor", "WheelsAndBrakes",
+    "Hotspots", "Hotspots_Interior", "Hotspots_Safety"
+  ],
+  "requiredParents": {
+    "Body": "VehicleRoot", "Glass": "VehicleRoot", "Wheels": "VehicleRoot", "Doors": "VehicleRoot", "Hood": "VehicleRoot",
+    "Trunk": "VehicleRoot", "Lights": "VehicleRoot", "Interior": "VehicleRoot", "Chassis": "VehicleRoot",
+    "Suspension": "VehicleRoot", "EngineOrMotor": "VehicleRoot", "WheelsAndBrakes": "VehicleRoot",
+    "FrontLeft": "Wheels", "FrontRight": "Wheels", "RearLeft": "Wheels", "RearRight": "Wheels",
+    "FrontLeftDoor": "Doors", "FrontRightDoor": "Doors", "RearLeftDoor": "Doors", "RearRightDoor": "Doors"
+  },
+  "pivots": {
+    "FrontLeftDoor": [0.88, 0.65, 0.90], "FrontRightDoor": [-0.88, 0.65, 0.90],
+    "RearLeftDoor": [0.88, 0.65, 0.04], "RearRightDoor": [-0.88, 0.65, 0.04],
+    "Hood": [0.0, 0.97, 0.98], "Trunk": [0.0, 1.53, -1.90],
+    "FrontLeft": [0.80, 0.36, 1.30], "FrontRight": [-0.80, 0.36, 1.30],
+    "RearLeft": [0.80, 0.36, -1.30], "RearRight": [-0.80, 0.36, -1.30]
+  },
+  "pivotTolerance": 0.005,
+  "requiredMaterials": ["Paint", "Accent", "InteriorFabric", "Glass", "HeadlightLens", "TaillightLens", "Hotspot"]
+}

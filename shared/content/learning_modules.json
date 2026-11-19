@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.1",
+  "disclaimer": "Educational overviews of general automotive concepts. Not repair, service or safety-certification guidance. Always consult a qualified technician for work on a real vehicle.",
+  "modules": [
+    {
+      "id": "vehicle_anatomy",
+      "title": "Vehicle anatomy",
+      "summary": "The main parts of a car and how they fit together.",
+      "estimatedMinutes": 4,
+      "relatedComponentIds": ["urbanx_body", "urbanx_chassis", "urbanx_wheels"],
+      "sections": [
+        { "id": "va_body", "heading": "Body and structure", "body": "Most modern passenger cars use a unibody: the body panels, floor and structural rails are welded into one stiff shell. This saves weight compared with a separate body-on-frame design, which is still common for heavy-duty off-road vehicles and trucks." },
+        { "id": "va_systems", "heading": "Major systems", "body": "A vehicle can be thought of as a set of systems: the powertrain makes and delivers drive, the chassis systems (steering, suspension, brakes) control motion, the electrical system powers lights and electronics, and the body keeps occupants comfortable and protected." },
+        { "id": "va_layouts", "heading": "Common layouts", "body": "In a front-engine, front-wheel-drive layout like UrbanX, the engine and transmission sit across the front and drive the front wheels. Rear-wheel drive and all-wheel drive layouts send power to the rear or to all four wheels." }
+      ],
+      "quiz": [
+        { "id": "va_q1", "prompt": "What is a unibody?", "choices": ["A body and structure welded into one shell", "A body bolted onto a separate ladder frame", "A single-seat vehicle", "A body made from one sheet of metal"], "correctIndex": 0, "explanation": "A unibody combines the body and the main load-bearing structure into one welded shell." },
+        { "id": "va_q2", "prompt": "Which wheels are driven in a front-wheel-drive layout?", "choices": ["The rear wheels", "The front wheels", "All four wheels", "None — it uses a propeller"], "correctIndex": 1, "explanation": "Front-wheel drive sends power from the engine to the front wheels." },
+        { "id": "va_q3", "prompt": "Which system controls a vehicle's motion on the road?", "choices": ["Infotainment", "Chassis systems: steering, suspension and brakes", "Climate control", "Lighting"], "correctIndex": 1, "explanation": "Steering, suspension and brakes are grouped as chassis systems." }
+      ]
+    },
+    {
+      "id": "powertrain_basics",
+      "title": "Engines and drivetrains",
+      "summary": "How a combustion engine turns fuel into motion.",
+      "estimatedMinutes": 5,
+      "relatedComponentIds": ["urbanx_engine", "urbanx_transmission", "urbanx_driveshafts", "urbanx_radiator", "urbanx_exhaust", "urbanx_fuel_tank"],
+      "sections": [
+        { "id": "pb_four_stroke", "heading": "The four-stroke cycle", "body": "Each cylinder repeats four strokes: intake (air and fuel enter), compression (the piston squeezes the mixture), power (a spark ignites it and pushes the piston down) and exhaust (burnt gases leave). The pistons turn a crankshaft, converting up-and-down motion into rotation." },
+        { "id": "pb_transmission", "heading": "Transmission", "body": "An engine works best within a limited speed range. The transmission provides several gear ratios so the wheels can turn slowly with high force when pulling away, or quickly at cruising speed while the engine turns relatively slowly." },
+        { "id": "pb_support", "heading": "Supporting systems", "body": "The cooling system circulates coolant through the engine and radiator to remove heat. The exhaust system carries gases away, and its catalytic converter reduces harmful emissions. The fuel system stores fuel in a tank and pumps it to the engine." }
+      ],
+      "quiz": [
+        { "id": "pb_q1", "prompt": "Which stroke produces power?", "choices": ["Intake", "Compression", "Power (combustion)", "Exhaust"], "correctIndex": 2, "explanation": "During the power stroke the burning mixture expands and pushes the piston down." },
+        { "id": "pb_q2", "prompt": "Why does a vehicle need a transmission?", "choices": ["To store fuel", "To change the ratio between engine speed and wheel speed", "To cool the engine", "To charge the battery"], "correctIndex": 1, "explanation": "Gear ratios let the engine stay in an efficient speed range across many road speeds." },
+        { "id": "pb_q3", "prompt": "What does the radiator do?", "choices": ["Removes heat from engine coolant", "Filters exhaust gases", "Stores electrical energy", "Holds the brake fluid"], "correctIndex": 0, "explanation": "Air flowing over the radiator fins carries heat away from the coolant." },
+        { "id": "pb_q4", "prompt": "Which part reduces harmful exhaust emissions?", "choices": ["Silencer", "Catalytic converter", "Fuel pump", "Alternator"], "correctIndex": 1, "explanation": "The catalytic converter chemically converts pollutants into less harmful gases." }
+      ]
+    },
+    {
+      "id": "brakes_suspension",
+      "title": "Brakes and suspension",
+      "summary": "How a car stops and how it rides over bumps.",
+      "estimatedMinutes": 4,
+      "relatedComponentIds": ["urbanx_front_brake", "urbanx_rear_brake", "urbanx_front_suspension", "urbanx_rear_suspension"],
+      "sections": [
+        { "id": "bs_disc", "heading": "Disc brakes", "body": "Pressing the brake pedal pushes hydraulic fluid to a caliper at each wheel. The caliper squeezes friction pads against a disc that spins with the wheel, turning motion into heat. Anti-lock braking (ABS) rapidly modulates pressure to stop the wheels locking." },
+        { "id": "bs_balance", "heading": "Brake balance", "body": "When a vehicle brakes, weight shifts toward the front. Front brakes are therefore larger and do most of the stopping; rear brakes help keep the vehicle stable." },
+        { "id": "bs_suspension", "heading": "Springs and dampers", "body": "Springs carry the vehicle's weight and absorb bumps. Dampers, often called shock absorbers, control how fast the springs move so the body does not keep bouncing. Together they keep the tyres in contact with the road." }
+      ],
+      "quiz": [
+        { "id": "bs_q1", "prompt": "What clamps the pads against the brake disc?", "choices": ["The caliper", "The radiator", "The strut", "The drive shaft"], "correctIndex": 0, "explanation": "Hydraulic pressure moves pistons in the caliper, which press the pads onto the disc." },
+        { "id": "bs_q2", "prompt": "Why are front brakes usually larger?", "choices": ["They are easier to reach", "Weight shifts forward when braking", "The engine is heavier at the back", "For appearance only"], "correctIndex": 1, "explanation": "Forward weight transfer means the front wheels can contribute more braking force." },
+        { "id": "bs_q3", "prompt": "What is the job of a damper?", "choices": ["Store fuel", "Control spring movement to stop bouncing", "Steer the wheels", "Cool the brakes"], "correctIndex": 1, "explanation": "Dampers dissipate the spring's energy so the body settles quickly." }
+      ]
+    },
+    {
+      "id": "ev_fundamentals",
+      "title": "Electric vehicle fundamentals",
+      "summary": "Battery, inverter, motor, charging and regenerative braking.",
+      "estimatedMinutes": 6,
+      "relatedComponentIds": [],
+      "sections": [
+        { "id": "ev_battery", "heading": "Battery pack", "body": "An EV stores energy in a high-voltage battery pack made of many individual cells grouped into modules. A battery management system monitors cell temperature and voltage to keep the pack safe and healthy. Capacity is measured in kilowatt-hours (kWh)." },
+        { "id": "ev_inverter", "heading": "Inverter", "body": "The battery supplies direct current (DC), but most traction motors run on alternating current (AC). The inverter converts DC into AC and controls its frequency and strength, which sets the motor's speed and torque." },
+        { "id": "ev_motor", "heading": "Electric motor", "body": "The motor turns electrical energy into rotation using magnetic fields. Electric motors deliver strong torque from standstill and usually need only a single-speed reduction gear rather than a multi-gear transmission." },
+        { "id": "ev_charging", "heading": "Charging", "body": "AC charging from a home or public charger uses the vehicle's on-board charger to convert AC into DC for the battery. DC fast charging bypasses the on-board charger and supplies DC directly at higher power. Charging usually slows as the battery approaches full to protect the cells." },
+        { "id": "ev_regen", "heading": "Regenerative braking", "body": "When the driver lifts off or brakes gently, the motor can act as a generator: the wheels drive the motor, which produces electricity that flows back through the inverter into the battery. This recovers energy that friction brakes would otherwise waste as heat." },
+        { "id": "ev_safety_note", "heading": "High-voltage safety", "body": "EV high-voltage systems are dangerous. Orange cabling marks high-voltage components. Only trained, qualified technicians should work on them." }
+      ],
+      "quiz": [
+        { "id": "ev_q1", "prompt": "What does the inverter do?", "choices": ["Converts DC from the battery to AC for the motor", "Stores energy", "Cools the cabin", "Measures tyre pressure"], "correctIndex": 0, "explanation": "The inverter turns battery DC into controlled AC for the traction motor." },
+        { "id": "ev_q2", "prompt": "During regenerative braking, energy flows…", "choices": ["From the battery to the wheels", "From the wheels back into the battery", "From the charger to the motor", "Out of the exhaust"], "correctIndex": 1, "explanation": "The motor acts as a generator and returns energy to the battery." },
+        { "id": "ev_q3", "prompt": "Battery capacity is usually measured in…", "choices": ["Horsepower", "Kilowatt-hours (kWh)", "Litres", "Newton-metres"], "correctIndex": 1, "explanation": "kWh measures stored energy." },
+        { "id": "ev_q4", "prompt": "Why does DC fast charging slow near full?", "choices": ["To protect the battery cells", "Because the cable gets shorter", "To save the charger's electricity", "It does not slow down"], "correctIndex": 0, "explanation": "Charge rate is reduced at high state of charge to protect cell health." }
+      ]
+    },
+    {
+      "id": "safety_systems",
+      "title": "Safety systems",
+      "summary": "Passive and active safety features and how they work together.",
+      "estimatedMinutes": 5,
+      "relatedComponentIds": [],
+      "sections": [
+        { "id": "ss_passive", "heading": "Passive safety", "body": "Passive safety reduces injury when a crash happens. Seat belts, airbags, head restraints, a strong passenger cell and crumple zones all work together. Crumple zones deform progressively to absorb energy so the cabin and its occupants experience lower forces." },
+        { "id": "ss_active", "heading": "Active safety", "body": "Active safety helps avoid a crash. Anti-lock brakes keep steering control while braking hard; electronic stability control brakes individual wheels to correct a skid; driver-assistance features use cameras, radar and ultrasonic sensors to warn the driver or brake automatically." },
+        { "id": "ss_limits", "heading": "Know the limits", "body": "Driver-assistance systems support an attentive driver; they do not replace one. Their sensors can be affected by weather, dirt and unusual road layouts." }
+      ],
+      "quiz": [
+        { "id": "ss_q1", "prompt": "What is the purpose of a crumple zone?", "choices": ["Absorb crash energy by deforming", "Make the car lighter", "Improve fuel economy", "Hold the spare wheel"], "correctIndex": 0, "explanation": "Controlled deformation lowers the forces passed to occupants." },
+        { "id": "ss_q2", "prompt": "Which is an active safety feature?", "choices": ["Curtain airbag", "Electronic stability control", "Head restraint", "Laminated windshield"], "correctIndex": 1, "explanation": "Stability control acts to prevent a loss of control before a crash." },
+        { "id": "ss_q3", "prompt": "Airbags are designed to…", "choices": ["Replace seat belts", "Supplement seat belts", "Only work at low speed", "Inflate when doors open"], "correctIndex": 1, "explanation": "Airbags are supplemental restraints that work together with belts." }
+      ]
+    },
+    {
+      "id": "interior_controls",
+      "title": "Interior and controls",
+      "summary": "Ergonomics, controls and storage inside the cabin.",
+      "estimatedMinutes": 3,
+      "relatedComponentIds": [],
+      "sections": [
+        { "id": "ic_ergonomics", "heading": "Driving position", "body": "A good driving position lets the driver reach the pedals and steering wheel comfortably with a clear view of the road and instruments. Adjustable seats, steering columns and mirrors adapt the cabin to different people." },
+        { "id": "ic_controls", "heading": "Controls and displays", "body": "Primary controls (steering, pedals, gear selector) are used constantly. Secondary controls such as climate and media are grouped on the centre console, the display or the steering wheel so they can be used with minimal distraction." },
+        { "id": "ic_storage", "heading": "Storage", "body": "Cabins include a glove box, door pockets, console storage and a cargo area. Folding rear seats trade passenger space for cargo space." }
+      ],
+      "quiz": [
+        { "id": "ic_q1", "prompt": "Which is a primary driving control?", "choices": ["Radio volume", "Steering wheel", "Seat heater", "Glove box"], "correctIndex": 1, "explanation": "Steering, pedals and the gear selector are primary controls." },
+        { "id": "ic_q2", "prompt": "Why place common controls on the steering wheel?", "choices": ["To reduce distraction", "To save cost", "To hide them", "To cool the cabin"], "correctIndex": 0, "explanation": "Drivers can use them without taking hands off the wheel." }
+      ]
+    }
+  ]
+}

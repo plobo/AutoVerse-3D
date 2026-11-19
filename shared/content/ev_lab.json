@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.11.1",
+  "disclaimer": "Conceptual, simplified diagram for education. Not a wiring diagram or service information for any real vehicle.",
+  "nodes": [
+    { "id": "charge_port", "title": "Charging port", "x": 0.08, "y": 0.22, "summary": "Where the charging cable connects. AC charging passes through the on-board charger; DC fast charging feeds the battery more directly." },
+    { "id": "battery", "title": "Battery pack", "x": 0.30, "y": 0.62, "summary": "Hundreds of cells store energy as DC electricity. A battery management system watches temperature and voltage." },
+    { "id": "inverter", "title": "Inverter", "x": 0.56, "y": 0.30, "summary": "Converts DC from the battery into controlled AC for the motor, and back again during regeneration." },
+    { "id": "motor", "title": "Electric motor", "x": 0.78, "y": 0.62, "summary": "Turns electrical energy into rotation through magnetic fields, with strong torque from a standstill." },
+    { "id": "wheels", "title": "Wheels", "x": 0.94, "y": 0.30, "summary": "A single-speed reduction gear passes the motor's rotation to the wheels." }
+  ],
+  "modes": [
+    { "id": "drive", "title": "Driving", "flows": [["battery", "inverter"], ["inverter", "motor"], ["motor", "wheels"]],
+      "textAlternative": "While driving, energy flows from the battery pack as DC electricity to the inverter, which converts it to AC for the electric motor. The motor turns the wheels through a reduction gear." },
+    { "id": "regen", "title": "Regenerative braking", "flows": [["wheels", "motor"], ["motor", "inverter"], ["inverter", "battery"]],
+      "textAlternative": "When slowing down, the turning wheels drive the motor as a generator. The inverter converts its AC output to DC and returns energy to the battery." },
+    { "id": "charge", "title": "Charging", "flows": [["charge_port", "battery"]],
+      "textAlternative": "When plugged in, electricity flows from the charging port into the battery pack. AC is converted to DC by the on-board charger; DC fast charging supplies DC directly." }
+  ]
+}

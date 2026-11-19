@@ -1,0 +1,28 @@
+.DS_Store
+*.swp
+.superpowers/
+# Python
+.venv/
+__pycache__/
+*.pyc
+# Node
+node_modules/
+# Android / Gradle
+android/.gradle/
+android/**/build/
+android/local.properties
+android/.idea/
+android/.kotlin/
+*.iml
+captures/
+# iOS / Xcode
+ios/build/
+ios/DerivedData/
+ios/*.xcodeproj/xcuserdata/
+ios/*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcresult
+# Secrets
+.env
+.env.*
+!.env.example
+assets/.work/

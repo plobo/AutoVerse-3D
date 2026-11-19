@@ -1,0 +1,72 @@
+{
+ "schemaVersion": 1,
+ "assetId": "studio_platform_v1",
+ "generator": "AutoVerse3D assetgen 1.0 (procedural, original)",
+ "units": "meters",
+ "upAxis": "Y",
+ "forwardAxis": "+Z",
+ "leftAxis": "+X",
+ "triangleCount": 1408,
+ "nodes": [
+  {
+   "name": "StudioRoot",
+   "parent": null,
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "StudioPlatform",
+   "parent": "StudioRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "StudioPlatform_Disc",
+   "parent": "StudioPlatform",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "StudioFloor",
+   "triangles": 256
+  },
+  {
+   "name": "StudioPlatform_Ring",
+   "parent": "StudioPlatform",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "StudioRing",
+   "triangles": 1152
+  }
+ ],
+ "materials": {
+  "StudioFloor": {
+   "baseColorHex": "#B9C0C7",
+   "metallic": 0.0,
+   "roughness": 0.8,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "StudioRing": {
+   "baseColorHex": "#4FD1C5",
+   "metallic": 0.2,
+   "roughness": 0.4,
+   "emissiveHex": "#1E6E68",
+   "opacity": 1.0
+  }
+ }
+}

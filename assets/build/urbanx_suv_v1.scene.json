@@ -1,0 +1,2371 @@
+{
+ "schemaVersion": 1,
+ "assetId": "urbanx_suv_v1",
+ "generator": "AutoVerse3D assetgen 1.0 (procedural, original)",
+ "units": "meters",
+ "upAxis": "Y",
+ "forwardAxis": "+Z",
+ "leftAxis": "+X",
+ "triangleCount": 17320,
+ "nodes": [
+  {
+   "name": "VehicleRoot",
+   "parent": null,
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Body",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Body_Shell",
+   "parent": "Body",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Paint",
+   "triangles": 228
+  },
+  {
+   "name": "Body_Cladding",
+   "parent": "Body",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Trim",
+   "triangles": 432
+  },
+  {
+   "name": "Body_Grille",
+   "parent": "Body",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Grille",
+   "triangles": 48
+  },
+  {
+   "name": "Body_AccentTrim",
+   "parent": "Body",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Accent",
+   "triangles": 48
+  },
+  {
+   "name": "Glass",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Glass_Fixed",
+   "parent": "Glass",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Glass",
+   "triangles": 36
+  },
+  {
+   "name": "Wheels",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontLeft",
+   "parent": "Wheels",
+   "kind": "group",
+   "pivot": [
+    0.8,
+    0.36,
+    1.3
+   ]
+  },
+  {
+   "name": "FrontLeft_Tire",
+   "parent": "FrontLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    1.3
+   ],
+   "material": "Tire",
+   "triangles": 256
+  },
+  {
+   "name": "FrontLeft_Rim01",
+   "parent": "FrontLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    1.3
+   ],
+   "material": "Rim",
+   "triangles": 500
+  },
+  {
+   "name": "FrontLeft_Rim02",
+   "parent": "FrontLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    1.3
+   ],
+   "material": "Rim",
+   "triangles": 560
+  },
+  {
+   "name": "FrontLeft_Rim03",
+   "parent": "FrontLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    1.3
+   ],
+   "material": "RimDark",
+   "triangles": 664
+  },
+  {
+   "name": "FrontRight",
+   "parent": "Wheels",
+   "kind": "group",
+   "pivot": [
+    -0.8,
+    0.36,
+    1.3
+   ]
+  },
+  {
+   "name": "FrontRight_Tire",
+   "parent": "FrontRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    1.3
+   ],
+   "material": "Tire",
+   "triangles": 256
+  },
+  {
+   "name": "FrontRight_Rim01",
+   "parent": "FrontRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    1.3
+   ],
+   "material": "Rim",
+   "triangles": 500
+  },
+  {
+   "name": "FrontRight_Rim02",
+   "parent": "FrontRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    1.3
+   ],
+   "material": "Rim",
+   "triangles": 560
+  },
+  {
+   "name": "FrontRight_Rim03",
+   "parent": "FrontRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    1.3
+   ],
+   "material": "RimDark",
+   "triangles": 664
+  },
+  {
+   "name": "RearLeft",
+   "parent": "Wheels",
+   "kind": "group",
+   "pivot": [
+    0.8,
+    0.36,
+    -1.3
+   ]
+  },
+  {
+   "name": "RearLeft_Tire",
+   "parent": "RearLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "Tire",
+   "triangles": 256
+  },
+  {
+   "name": "RearLeft_Rim01",
+   "parent": "RearLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "Rim",
+   "triangles": 500
+  },
+  {
+   "name": "RearLeft_Rim02",
+   "parent": "RearLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "Rim",
+   "triangles": 560
+  },
+  {
+   "name": "RearLeft_Rim03",
+   "parent": "RearLeft",
+   "kind": "mesh",
+   "pivot": [
+    0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "RimDark",
+   "triangles": 664
+  },
+  {
+   "name": "RearRight",
+   "parent": "Wheels",
+   "kind": "group",
+   "pivot": [
+    -0.8,
+    0.36,
+    -1.3
+   ]
+  },
+  {
+   "name": "RearRight_Tire",
+   "parent": "RearRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "Tire",
+   "triangles": 256
+  },
+  {
+   "name": "RearRight_Rim01",
+   "parent": "RearRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "Rim",
+   "triangles": 500
+  },
+  {
+   "name": "RearRight_Rim02",
+   "parent": "RearRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "Rim",
+   "triangles": 560
+  },
+  {
+   "name": "RearRight_Rim03",
+   "parent": "RearRight",
+   "kind": "mesh",
+   "pivot": [
+    -0.8,
+    0.36,
+    -1.3
+   ],
+   "material": "RimDark",
+   "triangles": 664
+  },
+  {
+   "name": "Doors",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontLeftDoor",
+   "parent": "Doors",
+   "kind": "group",
+   "pivot": [
+    0.88,
+    0.65,
+    0.9
+   ]
+  },
+  {
+   "name": "FrontLeftDoor_Panel",
+   "parent": "FrontLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Paint",
+   "triangles": 12
+  },
+  {
+   "name": "FrontLeftDoor_Window",
+   "parent": "FrontLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Glass",
+   "triangles": 12
+  },
+  {
+   "name": "FrontLeftDoor_Trim",
+   "parent": "FrontLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Accent",
+   "triangles": 36
+  },
+  {
+   "name": "FrontLeftDoor_Cladding",
+   "parent": "FrontLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "RearLeftDoor",
+   "parent": "Doors",
+   "kind": "group",
+   "pivot": [
+    0.88,
+    0.65,
+    0.04
+   ]
+  },
+  {
+   "name": "RearLeftDoor_Panel",
+   "parent": "RearLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Paint",
+   "triangles": 12
+  },
+  {
+   "name": "RearLeftDoor_Window",
+   "parent": "RearLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Glass",
+   "triangles": 12
+  },
+  {
+   "name": "RearLeftDoor_Trim",
+   "parent": "RearLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Accent",
+   "triangles": 24
+  },
+  {
+   "name": "RearLeftDoor_Cladding",
+   "parent": "RearLeftDoor",
+   "kind": "mesh",
+   "pivot": [
+    0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "FrontRightDoor",
+   "parent": "Doors",
+   "kind": "group",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.9
+   ]
+  },
+  {
+   "name": "FrontRightDoor_Panel",
+   "parent": "FrontRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Paint",
+   "triangles": 12
+  },
+  {
+   "name": "FrontRightDoor_Window",
+   "parent": "FrontRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Glass",
+   "triangles": 12
+  },
+  {
+   "name": "FrontRightDoor_Trim",
+   "parent": "FrontRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Accent",
+   "triangles": 36
+  },
+  {
+   "name": "FrontRightDoor_Cladding",
+   "parent": "FrontRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.9
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "RearRightDoor",
+   "parent": "Doors",
+   "kind": "group",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.04
+   ]
+  },
+  {
+   "name": "RearRightDoor_Panel",
+   "parent": "RearRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Paint",
+   "triangles": 12
+  },
+  {
+   "name": "RearRightDoor_Window",
+   "parent": "RearRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Glass",
+   "triangles": 12
+  },
+  {
+   "name": "RearRightDoor_Trim",
+   "parent": "RearRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Accent",
+   "triangles": 24
+  },
+  {
+   "name": "RearRightDoor_Cladding",
+   "parent": "RearRightDoor",
+   "kind": "mesh",
+   "pivot": [
+    -0.88,
+    0.65,
+    0.04
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "Hood",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.97,
+    0.98
+   ]
+  },
+  {
+   "name": "Hood_Panel",
+   "parent": "Hood",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.97,
+    0.98
+   ],
+   "material": "Paint",
+   "triangles": 12
+  },
+  {
+   "name": "Trunk",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    1.53,
+    -1.9
+   ]
+  },
+  {
+   "name": "Trunk_Panel",
+   "parent": "Trunk",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    1.53,
+    -1.9
+   ],
+   "material": "Paint",
+   "triangles": 24
+  },
+  {
+   "name": "Trunk_Window",
+   "parent": "Trunk",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    1.53,
+    -1.9
+   ],
+   "material": "Glass",
+   "triangles": 12
+  },
+  {
+   "name": "Lights",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Lights_Headlights",
+   "parent": "Lights",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "HeadlightLens",
+   "triangles": 36
+  },
+  {
+   "name": "Lights_Taillights",
+   "parent": "Lights",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "TaillightLens",
+   "triangles": 36
+  },
+  {
+   "name": "Interior",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Dashboard",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Dashboard_Panel",
+   "parent": "Dashboard",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorDash",
+   "triangles": 12
+  },
+  {
+   "name": "Dashboard_Cluster",
+   "parent": "Dashboard",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Screen",
+   "triangles": 12
+  },
+  {
+   "name": "InfotainmentDisplay",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "InfotainmentDisplay_Screen",
+   "parent": "InfotainmentDisplay",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Screen",
+   "triangles": 12
+  },
+  {
+   "name": "SteeringWheel",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.38,
+    0.98,
+    0.72
+   ]
+  },
+  {
+   "name": "SteeringWheel_Rim",
+   "parent": "SteeringWheel",
+   "kind": "mesh",
+   "pivot": [
+    0.38,
+    0.98,
+    0.72
+   ],
+   "material": "InteriorAccent",
+   "triangles": 352
+  },
+  {
+   "name": "FrontSeats",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontSeats_Driver",
+   "parent": "FrontSeats",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorFabric",
+   "triangles": 36
+  },
+  {
+   "name": "FrontSeats_DriverBase",
+   "parent": "FrontSeats",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "FrontSeats_Passenger",
+   "parent": "FrontSeats",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorFabric",
+   "triangles": 36
+  },
+  {
+   "name": "FrontSeats_PassengerBase",
+   "parent": "FrontSeats",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "RearSeats",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "RearSeats_Bench",
+   "parent": "RearSeats",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorFabric",
+   "triangles": 60
+  },
+  {
+   "name": "CenterConsole",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "CenterConsole_Body",
+   "parent": "CenterConsole",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorDash",
+   "triangles": 12
+  },
+  {
+   "name": "CenterConsole_Armrest",
+   "parent": "CenterConsole",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorFabric",
+   "triangles": 12
+  },
+  {
+   "name": "CenterConsole_Selector",
+   "parent": "CenterConsole",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Chrome",
+   "triangles": 40
+  },
+  {
+   "name": "GloveBox",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "GloveBox_Lid",
+   "parent": "GloveBox",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorAccent",
+   "triangles": 12
+  },
+  {
+   "name": "CargoArea",
+   "parent": "Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "CargoArea_Floor",
+   "parent": "CargoArea",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "InteriorDash",
+   "triangles": 12
+  },
+  {
+   "name": "Chassis",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "ChassisFrame",
+   "parent": "Chassis",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "ChassisFrame_Rails",
+   "parent": "ChassisFrame",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "ChassisMetal",
+   "triangles": 72
+  },
+  {
+   "name": "FuelTank",
+   "parent": "Chassis",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FuelTank_Body",
+   "parent": "FuelTank",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "FuelTank",
+   "triangles": 12
+  },
+  {
+   "name": "FuelTank_Filler",
+   "parent": "FuelTank",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "material": "Trim",
+   "triangles": 32
+  },
+  {
+   "name": "Suspension",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontSuspension",
+   "parent": "Suspension",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontLeftStrut",
+   "parent": "FrontSuspension",
+   "kind": "group",
+   "pivot": [
+    0.6,
+    0.66,
+    1.3
+   ]
+  },
+  {
+   "name": "FrontLeftStrut_Damper",
+   "parent": "FrontLeftStrut",
+   "kind": "mesh",
+   "pivot": [
+    0.6,
+    0.66,
+    1.3
+   ],
+   "material": "Chrome",
+   "triangles": 96
+  },
+  {
+   "name": "FrontLeftStrut_Spring",
+   "parent": "FrontLeftStrut",
+   "kind": "mesh",
+   "pivot": [
+    0.6,
+    0.66,
+    1.3
+   ],
+   "material": "Spring",
+   "triangles": 840
+  },
+  {
+   "name": "FrontLeftStrut_Arm",
+   "parent": "FrontLeftStrut",
+   "kind": "mesh",
+   "pivot": [
+    0.6,
+    0.66,
+    1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 12
+  },
+  {
+   "name": "FrontRightStrut",
+   "parent": "FrontSuspension",
+   "kind": "group",
+   "pivot": [
+    -0.6,
+    0.66,
+    1.3
+   ]
+  },
+  {
+   "name": "FrontRightStrut_Damper",
+   "parent": "FrontRightStrut",
+   "kind": "mesh",
+   "pivot": [
+    -0.6,
+    0.66,
+    1.3
+   ],
+   "material": "Chrome",
+   "triangles": 96
+  },
+  {
+   "name": "FrontRightStrut_Spring",
+   "parent": "FrontRightStrut",
+   "kind": "mesh",
+   "pivot": [
+    -0.6,
+    0.66,
+    1.3
+   ],
+   "material": "Spring",
+   "triangles": 840
+  },
+  {
+   "name": "FrontRightStrut_Arm",
+   "parent": "FrontRightStrut",
+   "kind": "mesh",
+   "pivot": [
+    -0.6,
+    0.66,
+    1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 12
+  },
+  {
+   "name": "RearSuspension",
+   "parent": "Suspension",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "RearLeftStrut",
+   "parent": "RearSuspension",
+   "kind": "group",
+   "pivot": [
+    0.6,
+    0.66,
+    -1.3
+   ]
+  },
+  {
+   "name": "RearLeftStrut_Damper",
+   "parent": "RearLeftStrut",
+   "kind": "mesh",
+   "pivot": [
+    0.6,
+    0.66,
+    -1.3
+   ],
+   "material": "Chrome",
+   "triangles": 96
+  },
+  {
+   "name": "RearLeftStrut_Spring",
+   "parent": "RearLeftStrut",
+   "kind": "mesh",
+   "pivot": [
+    0.6,
+    0.66,
+    -1.3
+   ],
+   "material": "Spring",
+   "triangles": 840
+  },
+  {
+   "name": "RearLeftStrut_Arm",
+   "parent": "RearLeftStrut",
+   "kind": "mesh",
+   "pivot": [
+    0.6,
+    0.66,
+    -1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 12
+  },
+  {
+   "name": "RearRightStrut",
+   "parent": "RearSuspension",
+   "kind": "group",
+   "pivot": [
+    -0.6,
+    0.66,
+    -1.3
+   ]
+  },
+  {
+   "name": "RearRightStrut_Damper",
+   "parent": "RearRightStrut",
+   "kind": "mesh",
+   "pivot": [
+    -0.6,
+    0.66,
+    -1.3
+   ],
+   "material": "Chrome",
+   "triangles": 96
+  },
+  {
+   "name": "RearRightStrut_Spring",
+   "parent": "RearRightStrut",
+   "kind": "mesh",
+   "pivot": [
+    -0.6,
+    0.66,
+    -1.3
+   ],
+   "material": "Spring",
+   "triangles": 840
+  },
+  {
+   "name": "RearRightStrut_Arm",
+   "parent": "RearRightStrut",
+   "kind": "mesh",
+   "pivot": [
+    -0.6,
+    0.66,
+    -1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 12
+  },
+  {
+   "name": "EngineOrMotor",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "EngineBlock",
+   "parent": "EngineOrMotor",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ]
+  },
+  {
+   "name": "EngineBlock_Block",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "EngineMetal",
+   "triangles": 12
+  },
+  {
+   "name": "EngineBlock_Head",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "EngineHead",
+   "triangles": 12
+  },
+  {
+   "name": "EngineBlock_Cover",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "EngineCover",
+   "triangles": 12
+  },
+  {
+   "name": "EngineBlock_Coils",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "Trim",
+   "triangles": 128
+  },
+  {
+   "name": "EngineBlock_Intake",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "EngineHead",
+   "triangles": 12
+  },
+  {
+   "name": "EngineBlock_OilPan",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "ChassisMetal",
+   "triangles": 12
+  },
+  {
+   "name": "EngineBlock_Alternator",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "EngineHead",
+   "triangles": 56
+  },
+  {
+   "name": "EngineBlock_AirBox",
+   "parent": "EngineBlock",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.45
+   ],
+   "material": "Trim",
+   "triangles": 12
+  },
+  {
+   "name": "Transmission",
+   "parent": "EngineOrMotor",
+   "kind": "group",
+   "pivot": [
+    -0.46,
+    0.59,
+    1.47
+   ]
+  },
+  {
+   "name": "Transmission_Case",
+   "parent": "Transmission",
+   "kind": "mesh",
+   "pivot": [
+    -0.46,
+    0.59,
+    1.47
+   ],
+   "material": "TransMetal",
+   "triangles": 12
+  },
+  {
+   "name": "Transmission_Bellhousing",
+   "parent": "Transmission",
+   "kind": "mesh",
+   "pivot": [
+    -0.46,
+    0.59,
+    1.47
+   ],
+   "material": "TransMetal",
+   "triangles": 72
+  },
+  {
+   "name": "DriveShafts",
+   "parent": "EngineOrMotor",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.36,
+    1.3
+   ]
+  },
+  {
+   "name": "DriveShafts_Shafts",
+   "parent": "DriveShafts",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.36,
+    1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 80
+  },
+  {
+   "name": "DriveShafts_Boots",
+   "parent": "DriveShafts",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.36,
+    1.3
+   ],
+   "material": "Tire",
+   "triangles": 160
+  },
+  {
+   "name": "Radiator",
+   "parent": "EngineOrMotor",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.65,
+    1.93
+   ]
+  },
+  {
+   "name": "Radiator_Core",
+   "parent": "Radiator",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.93
+   ],
+   "material": "Radiator",
+   "triangles": 12
+  },
+  {
+   "name": "Radiator_Fan",
+   "parent": "Radiator",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.93
+   ],
+   "material": "Trim",
+   "triangles": 80
+  },
+  {
+   "name": "Radiator_Hoses",
+   "parent": "Radiator",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.65,
+    1.93
+   ],
+   "material": "Tire",
+   "triangles": 64
+  },
+  {
+   "name": "Battery12V",
+   "parent": "EngineOrMotor",
+   "kind": "group",
+   "pivot": [
+    0.46,
+    0.66,
+    1.66
+   ]
+  },
+  {
+   "name": "Battery12V_Case",
+   "parent": "Battery12V",
+   "kind": "mesh",
+   "pivot": [
+    0.46,
+    0.66,
+    1.66
+   ],
+   "material": "Battery",
+   "triangles": 12
+  },
+  {
+   "name": "Battery12V_Positive",
+   "parent": "Battery12V",
+   "kind": "mesh",
+   "pivot": [
+    0.46,
+    0.66,
+    1.66
+   ],
+   "material": "TerminalRed",
+   "triangles": 32
+  },
+  {
+   "name": "Battery12V_Negative",
+   "parent": "Battery12V",
+   "kind": "mesh",
+   "pivot": [
+    0.46,
+    0.66,
+    1.66
+   ],
+   "material": "Trim",
+   "triangles": 32
+  },
+  {
+   "name": "Battery12V_Label",
+   "parent": "Battery12V",
+   "kind": "mesh",
+   "pivot": [
+    0.46,
+    0.66,
+    1.66
+   ],
+   "material": "EngineCover",
+   "triangles": 12
+  },
+  {
+   "name": "ExhaustSystem",
+   "parent": "EngineOrMotor",
+   "kind": "group",
+   "pivot": [
+    0.3,
+    0.27,
+    0.0
+   ]
+  },
+  {
+   "name": "ExhaustSystem_Pipes",
+   "parent": "ExhaustSystem",
+   "kind": "mesh",
+   "pivot": [
+    0.3,
+    0.27,
+    0.0
+   ],
+   "material": "Exhaust",
+   "triangles": 160
+  },
+  {
+   "name": "ExhaustSystem_Catalyst",
+   "parent": "ExhaustSystem",
+   "kind": "mesh",
+   "pivot": [
+    0.3,
+    0.27,
+    0.0
+   ],
+   "material": "Exhaust",
+   "triangles": 56
+  },
+  {
+   "name": "ExhaustSystem_Muffler",
+   "parent": "ExhaustSystem",
+   "kind": "mesh",
+   "pivot": [
+    0.3,
+    0.27,
+    0.0
+   ],
+   "material": "Exhaust",
+   "triangles": 12
+  },
+  {
+   "name": "WheelsAndBrakes",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontBrakeAssembly",
+   "parent": "WheelsAndBrakes",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "FrontLeftBrake",
+   "parent": "FrontBrakeAssembly",
+   "kind": "group",
+   "pivot": [
+    0.72,
+    0.36,
+    1.3
+   ]
+  },
+  {
+   "name": "FrontLeftBrake_Disc",
+   "parent": "FrontLeftBrake",
+   "kind": "mesh",
+   "pivot": [
+    0.72,
+    0.36,
+    1.3
+   ],
+   "material": "BrakeDisc",
+   "triangles": 88
+  },
+  {
+   "name": "FrontLeftBrake_Hub",
+   "parent": "FrontLeftBrake",
+   "kind": "mesh",
+   "pivot": [
+    0.72,
+    0.36,
+    1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 48
+  },
+  {
+   "name": "FrontLeftBrake_Caliper",
+   "parent": "FrontLeftBrake",
+   "kind": "mesh",
+   "pivot": [
+    0.72,
+    0.36,
+    1.3
+   ],
+   "material": "Caliper",
+   "triangles": 12
+  },
+  {
+   "name": "FrontRightBrake",
+   "parent": "FrontBrakeAssembly",
+   "kind": "group",
+   "pivot": [
+    -0.72,
+    0.36,
+    1.3
+   ]
+  },
+  {
+   "name": "FrontRightBrake_Disc",
+   "parent": "FrontRightBrake",
+   "kind": "mesh",
+   "pivot": [
+    -0.72,
+    0.36,
+    1.3
+   ],
+   "material": "BrakeDisc",
+   "triangles": 88
+  },
+  {
+   "name": "FrontRightBrake_Hub",
+   "parent": "FrontRightBrake",
+   "kind": "mesh",
+   "pivot": [
+    -0.72,
+    0.36,
+    1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 48
+  },
+  {
+   "name": "FrontRightBrake_Caliper",
+   "parent": "FrontRightBrake",
+   "kind": "mesh",
+   "pivot": [
+    -0.72,
+    0.36,
+    1.3
+   ],
+   "material": "Caliper",
+   "triangles": 12
+  },
+  {
+   "name": "RearBrakeAssembly",
+   "parent": "WheelsAndBrakes",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "RearLeftBrake",
+   "parent": "RearBrakeAssembly",
+   "kind": "group",
+   "pivot": [
+    0.72,
+    0.36,
+    -1.3
+   ]
+  },
+  {
+   "name": "RearLeftBrake_Disc",
+   "parent": "RearLeftBrake",
+   "kind": "mesh",
+   "pivot": [
+    0.72,
+    0.36,
+    -1.3
+   ],
+   "material": "BrakeDisc",
+   "triangles": 88
+  },
+  {
+   "name": "RearLeftBrake_Hub",
+   "parent": "RearLeftBrake",
+   "kind": "mesh",
+   "pivot": [
+    0.72,
+    0.36,
+    -1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 48
+  },
+  {
+   "name": "RearLeftBrake_Caliper",
+   "parent": "RearLeftBrake",
+   "kind": "mesh",
+   "pivot": [
+    0.72,
+    0.36,
+    -1.3
+   ],
+   "material": "Caliper",
+   "triangles": 12
+  },
+  {
+   "name": "RearRightBrake",
+   "parent": "RearBrakeAssembly",
+   "kind": "group",
+   "pivot": [
+    -0.72,
+    0.36,
+    -1.3
+   ]
+  },
+  {
+   "name": "RearRightBrake_Disc",
+   "parent": "RearRightBrake",
+   "kind": "mesh",
+   "pivot": [
+    -0.72,
+    0.36,
+    -1.3
+   ],
+   "material": "BrakeDisc",
+   "triangles": 88
+  },
+  {
+   "name": "RearRightBrake_Hub",
+   "parent": "RearRightBrake",
+   "kind": "mesh",
+   "pivot": [
+    -0.72,
+    0.36,
+    -1.3
+   ],
+   "material": "ChassisMetal",
+   "triangles": 48
+  },
+  {
+   "name": "RearRightBrake_Caliper",
+   "parent": "RearRightBrake",
+   "kind": "mesh",
+   "pivot": [
+    -0.72,
+    0.36,
+    -1.3
+   ],
+   "material": "Caliper",
+   "triangles": 12
+  },
+  {
+   "name": "Hotspots",
+   "parent": "VehicleRoot",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Hotspots_Interior",
+   "parent": "Hotspots",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Hotspot_dashboard",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    -0.05,
+    0.99,
+    0.98
+   ]
+  },
+  {
+   "name": "Hotspot_dashboard_Marker",
+   "parent": "Hotspot_dashboard",
+   "kind": "mesh",
+   "pivot": [
+    -0.05,
+    0.99,
+    0.98
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_steering_wheel",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    0.38,
+    0.98,
+    0.72
+   ]
+  },
+  {
+   "name": "Hotspot_steering_wheel_Marker",
+   "parent": "Hotspot_steering_wheel",
+   "kind": "mesh",
+   "pivot": [
+    0.38,
+    0.98,
+    0.72
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_infotainment_display",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    1.07,
+    0.9
+   ]
+  },
+  {
+   "name": "Hotspot_infotainment_display_Marker",
+   "parent": "Hotspot_infotainment_display",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    1.07,
+    0.9
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_center_console",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.7,
+    0.38
+   ]
+  },
+  {
+   "name": "Hotspot_center_console_Marker",
+   "parent": "Hotspot_center_console",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.7,
+    0.38
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_front_seats",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    -0.38,
+    1.02,
+    -0.06
+   ]
+  },
+  {
+   "name": "Hotspot_front_seats_Marker",
+   "parent": "Hotspot_front_seats",
+   "kind": "mesh",
+   "pivot": [
+    -0.38,
+    1.02,
+    -0.06
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_rear_seats",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    -0.4,
+    0.86,
+    -0.95
+   ]
+  },
+  {
+   "name": "Hotspot_rear_seats_Marker",
+   "parent": "Hotspot_rear_seats",
+   "kind": "mesh",
+   "pivot": [
+    -0.4,
+    0.86,
+    -0.95
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_glove_box",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    -0.45,
+    0.8,
+    0.84
+   ]
+  },
+  {
+   "name": "Hotspot_glove_box_Marker",
+   "parent": "Hotspot_glove_box",
+   "kind": "mesh",
+   "pivot": [
+    -0.45,
+    0.8,
+    0.84
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_cargo_area",
+   "parent": "Hotspots_Interior",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.72,
+    -1.55
+   ]
+  },
+  {
+   "name": "Hotspot_cargo_area_Marker",
+   "parent": "Hotspot_cargo_area",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.72,
+    -1.55
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspots_Safety",
+   "parent": "Hotspots",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "name": "Hotspot_front_airbags",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.38,
+    1.0,
+    0.68
+   ]
+  },
+  {
+   "name": "Hotspot_front_airbags_Marker",
+   "parent": "Hotspot_front_airbags",
+   "kind": "mesh",
+   "pivot": [
+    0.38,
+    1.0,
+    0.68
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_curtain_airbags",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.78,
+    1.46,
+    -0.35
+   ]
+  },
+  {
+   "name": "Hotspot_curtain_airbags_Marker",
+   "parent": "Hotspot_curtain_airbags",
+   "kind": "mesh",
+   "pivot": [
+    0.78,
+    1.46,
+    -0.35
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_seat_belts",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.74,
+    1.24,
+    -0.02
+   ]
+  },
+  {
+   "name": "Hotspot_seat_belts_Marker",
+   "parent": "Hotspot_seat_belts",
+   "kind": "mesh",
+   "pivot": [
+    0.74,
+    1.24,
+    -0.02
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_front_crumple_zone",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.66,
+    2.1
+   ]
+  },
+  {
+   "name": "Hotspot_front_crumple_zone_Marker",
+   "parent": "Hotspot_front_crumple_zone",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.66,
+    2.1
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_rear_crumple_zone",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.66,
+    -2.13
+   ]
+  },
+  {
+   "name": "Hotspot_rear_crumple_zone_Marker",
+   "parent": "Hotspot_rear_crumple_zone",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.66,
+    -2.13
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_stability_control",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.96,
+    0.36,
+    1.3
+   ]
+  },
+  {
+   "name": "Hotspot_stability_control_Marker",
+   "parent": "Hotspot_stability_control",
+   "kind": "mesh",
+   "pivot": [
+    0.96,
+    0.36,
+    1.3
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_front_radar",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    0.46,
+    2.17
+   ]
+  },
+  {
+   "name": "Hotspot_front_radar_Marker",
+   "parent": "Hotspot_front_radar",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    0.46,
+    2.17
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_windshield_camera",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.0,
+    1.42,
+    0.86
+   ]
+  },
+  {
+   "name": "Hotspot_windshield_camera_Marker",
+   "parent": "Hotspot_windshield_camera",
+   "kind": "mesh",
+   "pivot": [
+    0.0,
+    1.42,
+    0.86
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  },
+  {
+   "name": "Hotspot_parking_sensors",
+   "parent": "Hotspots_Safety",
+   "kind": "group",
+   "pivot": [
+    0.5,
+    0.56,
+    -2.16
+   ]
+  },
+  {
+   "name": "Hotspot_parking_sensors_Marker",
+   "parent": "Hotspot_parking_sensors",
+   "kind": "mesh",
+   "pivot": [
+    0.5,
+    0.56,
+    -2.16
+   ],
+   "material": "Hotspot",
+   "triangles": 120
+  }
+ ],
+ "materials": {
+  "Paint": {
+   "baseColorHex": "#E9ECEF",
+   "metallic": 0.1,
+   "roughness": 0.35,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Accent": {
+   "baseColorHex": "#1C1E21",
+   "metallic": 0.1,
+   "roughness": 0.6,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Trim": {
+   "baseColorHex": "#17191C",
+   "metallic": 0.0,
+   "roughness": 0.75,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Grille": {
+   "baseColorHex": "#0F1113",
+   "metallic": 0.2,
+   "roughness": 0.5,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Glass": {
+   "baseColorHex": "#1A252E",
+   "metallic": 0.0,
+   "roughness": 0.05,
+   "emissiveHex": null,
+   "opacity": 0.38
+  },
+  "HeadlightLens": {
+   "baseColorHex": "#F5F7FA",
+   "metallic": 0.2,
+   "roughness": 0.1,
+   "emissiveHex": "#FFF8E7",
+   "opacity": 1.0
+  },
+  "TaillightLens": {
+   "baseColorHex": "#A11616",
+   "metallic": 0.1,
+   "roughness": 0.2,
+   "emissiveHex": "#D01818",
+   "opacity": 1.0
+  },
+  "Tire": {
+   "baseColorHex": "#151515",
+   "metallic": 0.0,
+   "roughness": 0.9,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Rim": {
+   "baseColorHex": "#C8CCD0",
+   "metallic": 0.95,
+   "roughness": 0.25,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "RimDark": {
+   "baseColorHex": "#34373C",
+   "metallic": 0.8,
+   "roughness": 0.35,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Chrome": {
+   "baseColorHex": "#E0E3E6",
+   "metallic": 1.0,
+   "roughness": 0.12,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "InteriorFabric": {
+   "baseColorHex": "#2B2D31",
+   "metallic": 0.0,
+   "roughness": 0.9,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "InteriorDash": {
+   "baseColorHex": "#232528",
+   "metallic": 0.0,
+   "roughness": 0.7,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "InteriorAccent": {
+   "baseColorHex": "#5A5F66",
+   "metallic": 0.5,
+   "roughness": 0.4,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Screen": {
+   "baseColorHex": "#0B1622",
+   "metallic": 0.3,
+   "roughness": 0.1,
+   "emissiveHex": "#123A55",
+   "opacity": 1.0
+  },
+  "EngineMetal": {
+   "baseColorHex": "#6E7378",
+   "metallic": 0.8,
+   "roughness": 0.45,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "EngineHead": {
+   "baseColorHex": "#A7ADB3",
+   "metallic": 0.9,
+   "roughness": 0.35,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "EngineCover": {
+   "baseColorHex": "#0B7A75",
+   "metallic": 0.2,
+   "roughness": 0.4,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "TransMetal": {
+   "baseColorHex": "#8B8F94",
+   "metallic": 0.8,
+   "roughness": 0.5,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Radiator": {
+   "baseColorHex": "#3B4046",
+   "metallic": 0.7,
+   "roughness": 0.5,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Battery": {
+   "baseColorHex": "#1A1C1F",
+   "metallic": 0.0,
+   "roughness": 0.6,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "TerminalRed": {
+   "baseColorHex": "#C62828",
+   "metallic": 0.3,
+   "roughness": 0.4,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "ChassisMetal": {
+   "baseColorHex": "#2E3135",
+   "metallic": 0.6,
+   "roughness": 0.6,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "FuelTank": {
+   "baseColorHex": "#4D5257",
+   "metallic": 0.3,
+   "roughness": 0.6,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Exhaust": {
+   "baseColorHex": "#8A7F72",
+   "metallic": 0.9,
+   "roughness": 0.55,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Spring": {
+   "baseColorHex": "#E8B931",
+   "metallic": 0.3,
+   "roughness": 0.4,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "BrakeDisc": {
+   "baseColorHex": "#9AA0A6",
+   "metallic": 1.0,
+   "roughness": 0.4,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Caliper": {
+   "baseColorHex": "#C62828",
+   "metallic": 0.3,
+   "roughness": 0.35,
+   "emissiveHex": null,
+   "opacity": 1.0
+  },
+  "Hotspot": {
+   "baseColorHex": "#F28C28",
+   "metallic": 0.0,
+   "roughness": 0.4,
+   "emissiveHex": "#F28C28",
+   "opacity": 1.0
+  }
+ }
+}

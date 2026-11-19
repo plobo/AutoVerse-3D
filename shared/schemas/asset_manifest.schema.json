@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://autoverse3d.example/schemas/asset_manifest.schema.json",
+  "title": "Asset manifest",
+  "type": "object",
+  "required": ["id", "vehicleId", "version", "format", "fileName", "fileSizeBytes", "checksum", "minimumAppVersion", "licenceRecordId", "platformVariants", "sceneDescriptor", "schemaVersion"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9_]+_v[0-9]+$" },
+    "vehicleId": { "type": "string" },
+    "version": { "type": "integer", "minimum": 1 },
+    "format": { "const": "glb" },
+    "fileName": { "type": "string", "pattern": "\\.glb$" },
+    "fileSizeBytes": { "type": "integer", "minimum": 1 },
+    "checksum": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" },
+    "minimumAppVersion": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "licenceRecordId": { "type": "string" },
+    "platformVariants": {
+      "type": "object",
+      "properties": {
+        "ios": { "$ref": "#/$defs/variant" }
+      },
+      "required": ["ios"]
+    },
+    "sceneDescriptor": { "$ref": "#/$defs/variant" },
+    "triangleCount": { "type": "integer" },
+    "schemaVersion": { "const": 1 }
+  },
+  "$defs": {
+    "variant": {
+      "type": "object",
+      "required": ["format", "fileName", "fileSizeBytes", "checksum"],
+      "properties": {
+        "format": { "enum": ["usdz", "glb", "json"] },
+        "fileName": { "type": "string" },
+        "fileSizeBytes": { "type": "integer", "minimum": 1 },
+        "checksum": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$" }
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "urbanx_suv_v1",
+  "vehicleId": "urbanx_suv",
+  "version": 1,
+  "format": "glb",
+  "fileName": "urbanx_suv_v1.glb",
+  "fileSizeBytes": 1435232,
+  "checksum": "sha256:0242401dde0f8552619394a19b0cf84016a167179e526cde4712e5b7ad0a0dfc",
+  "minimumAppVersion": "1.0.0",
+  "licenceRecordId": "asset_original_urbanx",
+  "platformVariants": {
+    "ios": {
+      "format": "usdz",
+      "fileName": "urbanx_suv_v1.usdz",
+      "fileSizeBytes": 651867,
+      "checksum": "sha256:6cd65aa82a7ec6c63b6e0112a0f12f5744e5bfdfe01f40bea6b94ef8e99e3ed9"
+    }
+  },
+  "sceneDescriptor": {
+    "format": "json",
+    "fileName": "urbanx_suv_v1.scene.json",
+    "fileSizeBytes": 35957,
+    "checksum": "sha256:6d3fb7389d436507a6843df6659ad1f8d22e0810e9f303029d9eb773f468c47f"
+  },
+  "triangleCount": 17320,
+  "schemaVersion": 1
+}

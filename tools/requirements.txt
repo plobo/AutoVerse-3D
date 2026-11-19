@@ -1,0 +1,2 @@
+usd-core==26.11
+jsonschema>=4.23

@@ -1,0 +1,27 @@
+{
+  "id": "studio_platform_v1",
+  "vehicleId": "studio",
+  "version": 1,
+  "format": "glb",
+  "fileName": "studio_platform_v1.glb",
+  "fileSizeBytes": 111768,
+  "checksum": "sha256:dbfe864a6dd8f734a9379404cc249316a7eb024f89d2212a65602a166c971f93",
+  "minimumAppVersion": "1.0.0",
+  "licenceRecordId": "asset_original_studio",
+  "platformVariants": {
+    "ios": {
+      "format": "usdz",
+      "fileName": "studio_platform_v1.usdz",
+      "fileSizeBytes": 103851,
+      "checksum": "sha256:6a89709fb92ec6a311da06f2093f2bc07ef96aa789f8f0171f72261e2bee5432"
+    }
+  },
+  "sceneDescriptor": {
+    "format": "json",
+    "fileName": "studio_platform_v1.scene.json",
+    "fileSizeBytes": 1162,
+    "checksum": "sha256:bd0b71931d18c0e48132abff715be6361f70d35a6dca2655df6d5754978da637"
+  },
+  "triangleCount": 1408,
+  "schemaVersion": 1
+}

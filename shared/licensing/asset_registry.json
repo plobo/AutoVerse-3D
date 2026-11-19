@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "recordId": "asset_original_urbanx",
+      "assetId": "urbanx_suv_v1",
+      "files": [
+        "urbanx_suv_v1.glb",
+        "urbanx_suv_v1.scene.json",
+        "urbanx_suv_v1.usdz"
+      ],
+      "title": "UrbanX fictional compact SUV (v1)",
+      "creator": "AutoVerse 3D project (procedural source: tools/assetgen/urbanx.py)",
+      "origin": "original",
+      "sourceUrl": "repo://tools/assetgen/urbanx.py",
+      "createdOrDownloadedDate": "2026-11-18",
+      "licence": {
+        "name": "Project-owned original work",
+        "termsReference": "LICENSE (project licence) \u2014 all geometry and materials authored from primitives in this repository"
+      },
+      "commercialUse": true,
+      "modificationAllowed": true,
+      "attribution": {
+        "required": false,
+        "text": "",
+        "placement": "n/a"
+      },
+      "restrictions": "None. Contains no third-party geometry, textures, logos or trademarks.",
+      "checksums": {
+        "urbanx_suv_v1.glb": "sha256:0242401dde0f8552619394a19b0cf84016a167179e526cde4712e5b7ad0a0dfc",
+        "urbanx_suv_v1.usdz": "sha256:6cd65aa82a7ec6c63b6e0112a0f12f5744e5bfdfe01f40bea6b94ef8e99e3ed9",
+        "urbanx_suv_v1.scene.json": "sha256:6d3fb7389d436507a6843df6659ad1f8d22e0810e9f303029d9eb773f468c47f"
+      },
+      "reviewer": "",
+      "approvalDate": null,
+      "status": "pending_review"
+    },
+    {
+      "recordId": "asset_original_studio",
+      "assetId": "studio_platform_v1",
+      "files": [
+        "studio_platform_v1.glb",
+        "studio_platform_v1.scene.json",
+        "studio_platform_v1.usdz"
+      ],
+      "title": "Neutral studio platform (v1)",
+      "creator": "AutoVerse 3D project (procedural source: tools/assetgen/urbanx.py#build_studio)",
+      "origin": "original",
+      "sourceUrl": "repo://tools/assetgen/urbanx.py",
+      "createdOrDownloadedDate": "2026-11-18",
+      "licence": {
+        "name": "Project-owned original work",
+        "termsReference": "LICENSE (project licence)"
+      },
+      "commercialUse": true,
+      "modificationAllowed": true,
+      "attribution": {
+        "required": false,
+        "text": "",
+        "placement": "n/a"
+      },
+      "restrictions": "None.",
+      "checksums": {
+        "studio_platform_v1.glb": "sha256:dbfe864a6dd8f734a9379404cc249316a7eb024f89d2212a65602a166c971f93",
+        "studio_platform_v1.usdz": "sha256:6a89709fb92ec6a311da06f2093f2bc07ef96aa789f8f0171f72261e2bee5432",
+        "studio_platform_v1.scene.json": "sha256:bd0b71931d18c0e48132abff715be6361f70d35a6dca2655df6d5754978da637"
+      },
+      "reviewer": "",
+      "approvalDate": null,
+      "status": "pending_review"
+    }
+  ]
+}
