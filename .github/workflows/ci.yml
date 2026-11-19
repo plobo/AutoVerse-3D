@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  assets:
+    name: Assets, contracts & licence registry
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r tools/requirements.txt
+      - name: Validate manifests, schemas, model structure, USDZ parity, licences and trademarks
+        run: python tools/validate/validate_assets.py
+      - name: Asset pipeline unit tests
+        run: python -m unittest discover -s tools/tests -v
+      - name: Assets are reproducible from source
+        # GLB + scene descriptors must match byte-for-byte. USDZ bytes depend on the USD library's binary writer, so they
+        # are verified by checksum (manifest) and node parity (validator) instead.
+        run: |
+          python tools/assetgen/build.py
+          git diff --exit-code -- 'assets/build/*.glb' 'assets/build/*.scene.json' || (echo "Committed assets differ from tools/assetgen output. Rebuild and re-review." && exit 1)
+
+  backend:
+    name: Backend API
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20", cache: npm, cache-dependency-path: backend/package-lock.json }
+      - run: npm ci
+      - run: npm test
+
+  android:
+    name: Android build & unit tests
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: android } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "21" }
+      - uses: gradle/actions/setup-gradle@v4
+      - run: ./gradlew :domain:test :app:testDebugUnitTest :app:assembleDebug --console=plain
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android-test-reports
+          path: |
+            android/domain/build/reports/tests
+            android/app/build/reports/tests
+
+  ios:
+    name: iOS build & unit tests
+    runs-on: macos-15
+    defaults: { run: { working-directory: ios } }
+    steps:
+      - uses: actions/checkout@v4
+      - run: brew install xcodegen
+      - run: xcodegen generate
+      - name: Unit tests on the first available iPhone simulator
+        run: |
+          DEVICE=$(xcrun simctl list devices available | grep -m1 -oE 'iPhone [^(]+' | sed 's/ *$//')
+          echo "Using $DEVICE"
+          xcodebuild -project AutoVerse3D.xcodeproj -scheme AutoVerse3D \
+            -destination "platform=iOS Simulator,name=$DEVICE" \
+            -only-testing:AutoVerse3DTests CODE_SIGNING_ALLOWED=NO test
