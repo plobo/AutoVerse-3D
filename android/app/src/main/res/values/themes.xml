@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.AutoVerse" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/splash</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+    <color name="splash">#0E1116</color>
+    <color name="brand">#0B7A75</color>
+</resources>
