@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0411F9C75331D2C1A2D99998 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD926411759C95C310861E2E /* HomeScreen.swift */; };
+		081509579EE498B22C6AB80D /* InteriorPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21969E007907739CA14E367E /* InteriorPanel.swift */; };
+		113F597C7F7BA84D1416DC00 /* AutoVerse3DApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC2CA7882D2FC4629741C0 /* AutoVerse3DApp.swift */; };
+		2A891DC148CAA30702840824 /* MechanicalPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DEE57CE1A85223DFD9D528 /* MechanicalPanel.swift */; };
+		3357773FC846DCE19A8F1A15 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E90B93A5A2EA70559401B5 /* Theme.swift */; };
+		38F867AB7EA1340632312C18 /* DomainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F3ED9E4BBA33D1C6282B27 /* DomainTests.swift */; };
+		4169781B90061910C8252F75 /* AssistantScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D815670055220EB83C5D0B /* AssistantScreen.swift */; };
+		426DD9206338D870B441D87B /* ExploreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5F586FEF19B9ED20016BE8 /* ExploreScreen.swift */; };
+		45E9E8C8304807C44216751F /* ShowroomScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19CFFE66F33AB33F96D9D2F /* ShowroomScreen.swift */; };
+		4721A57DE47E98448CA00CCB /* Logic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65FB3B57793664FF7E3B414 /* Logic.swift */; };
+		4C0459D05173ECE74C7502C7 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F165C6D232BB2527C5AFFC2B /* ContentRepository.swift */; };
+		4F3DF242C18C3547F9EAB746 /* RealityVehicleRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CACCEF6BF18B3B8E1415BE /* RealityVehicleRenderer.swift */; };
+		62D0AD39CF072CB2640B42F9 /* GarageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0696BF2BE1CDA5888EDD6F4F /* GarageScreen.swift */; };
+		6DD5228A7D59711EE634EC1A /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD2E695FCBBB0DBCF84161D /* AppDependencies.swift */; };
+		8F34028C2AB9E087541023EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A84AECB1E9B19A73BF5E331 /* Assets.xcassets */; };
+		8F638DD717DB7324A719B142 /* AssetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB96033976C3CC7D2A776C1 /* AssetRepository.swift */; };
+		A4C13370408CE9D2F77A7666 /* EvLabScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7125993F80A49A18DFE5C58D /* EvLabScreen.swift */; };
+		B39D5B69B5388A645AD2667D /* SafetyPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0FB2F10A96689874C73023 /* SafetyPanel.swift */; };
+		B43A06C3E21CBA1BA851A571 /* PersistenceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C56B63B34AF871E77E5336 /* PersistenceModels.swift */; };
+		C481592F566CC22F7B1D60CB /* CoreJourneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8F0F1DCFB7F617A3146172E /* CoreJourneyUITests.swift */; };
+		E09D74EF5BA132B032E27EFF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E689449BA56620F225B49FAD /* APIClient.swift */; };
+		E622E3132ED934F2767350CB /* CustomizationPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64861A7A8683F3E465D839C2 /* CustomizationPanel.swift */; };
+		E89846213544017EF7BC9B2E /* VehicleViewerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E86827D1908E9840638CD6C /* VehicleViewerModel.swift */; };
+		EDE4FD109FC0C9DEB25D436B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F49DD443AB87340CB6E134E /* Models.swift */; };
+		F226DC1D104C9703E08225D2 /* VehicleViewerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC960EFEC258A8DDC4A96693 /* VehicleViewerScreen.swift */; };
+		F435FC132FE600155B528080 /* ScreenshotTour.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7F4AC7300128C9E7944EB3 /* ScreenshotTour.swift */; };
+		FCE5FE9B66AB7CC275FAB4B8 /* LearningScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207FE7781DF470BB713F06BF /* LearningScreens.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87215558081E2A23F6A4AF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCDFB2A76C6C26498881D4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC03E85AD271D96E6F2CB8A0;
+			remoteInfo = AutoVerse3D;
+		};
+		87D3FCE82AFBC5726285782E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DCDFB2A76C6C26498881D4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC03E85AD271D96E6F2CB8A0;
+			remoteInfo = AutoVerse3D;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0696BF2BE1CDA5888EDD6F4F /* GarageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GarageScreen.swift; sourceTree = "<group>"; };
+		0F49DD443AB87340CB6E134E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		19DEE57CE1A85223DFD9D528 /* MechanicalPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MechanicalPanel.swift; sourceTree = "<group>"; };
+		207FE7781DF470BB713F06BF /* LearningScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningScreens.swift; sourceTree = "<group>"; };
+		21969E007907739CA14E367E /* InteriorPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteriorPanel.swift; sourceTree = "<group>"; };
+		44D815670055220EB83C5D0B /* AssistantScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantScreen.swift; sourceTree = "<group>"; };
+		4B9751578CF94D24D57649D2 /* AutoVerse3DTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AutoVerse3DTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E86827D1908E9840638CD6C /* VehicleViewerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewerModel.swift; sourceTree = "<group>"; };
+		593F995B26A376F5C1DFE2DA /* AutoVerse3DUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AutoVerse3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A84AECB1E9B19A73BF5E331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64861A7A8683F3E465D839C2 /* CustomizationPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizationPanel.swift; sourceTree = "<group>"; };
+		7125993F80A49A18DFE5C58D /* EvLabScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvLabScreen.swift; sourceTree = "<group>"; };
+		800079E1BA336F0A157AEBCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		86E90B93A5A2EA70559401B5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8FD2E695FCBBB0DBCF84161D /* AppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		A65FB3B57793664FF7E3B414 /* Logic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logic.swift; sourceTree = "<group>"; };
+		AF0FB2F10A96689874C73023 /* SafetyPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafetyPanel.swift; sourceTree = "<group>"; };
+		BA5F586FEF19B9ED20016BE8 /* ExploreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreScreen.swift; sourceTree = "<group>"; };
+		BDD6BD42A77E55ED6FC6CDEE /* AutoVerse3D.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AutoVerse3D.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F3ED9E4BBA33D1C6282B27 /* DomainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainTests.swift; sourceTree = "<group>"; };
+		C8F0F1DCFB7F617A3146172E /* CoreJourneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreJourneyUITests.swift; sourceTree = "<group>"; };
+		CC960EFEC258A8DDC4A96693 /* VehicleViewerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewerScreen.swift; sourceTree = "<group>"; };
+		CDB96033976C3CC7D2A776C1 /* AssetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetRepository.swift; sourceTree = "<group>"; };
+		CF7F4AC7300128C9E7944EB3 /* ScreenshotTour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotTour.swift; sourceTree = "<group>"; };
+		DABC2CA7882D2FC4629741C0 /* AutoVerse3DApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoVerse3DApp.swift; sourceTree = "<group>"; };
+		DD926411759C95C310861E2E /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E19CFFE66F33AB33F96D9D2F /* ShowroomScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowroomScreen.swift; sourceTree = "<group>"; };
+		E3CACCEF6BF18B3B8E1415BE /* RealityVehicleRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityVehicleRenderer.swift; sourceTree = "<group>"; };
+		E689449BA56620F225B49FAD /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F165C6D232BB2527C5AFFC2B /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		F9C56B63B34AF871E77E5336 /* PersistenceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceModels.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1105C95BC7DF399A1285631C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6BD42A77E55ED6FC6CDEE /* AutoVerse3D.app */,
+				4B9751578CF94D24D57649D2 /* AutoVerse3DTests.xctest */,
+				593F995B26A376F5C1DFE2DA /* AutoVerse3DUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		156DA9ABA720A6461087AB35 /* AutoVerse3DUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8F0F1DCFB7F617A3146172E /* CoreJourneyUITests.swift */,
+				CF7F4AC7300128C9E7944EB3 /* ScreenshotTour.swift */,
+			);
+			path = AutoVerse3DUITests;
+			sourceTree = "<group>";
+		};
+		194AEEF67631B95B41A38BB3 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				207FE7781DF470BB713F06BF /* LearningScreens.swift */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
+		2070889B7457D16A531727C2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD926411759C95C310861E2E /* HomeScreen.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2F27134A9C9844BC65D95FFB /* SafetyLab */ = {
+			isa = PBXGroup;
+			children = (
+				AF0FB2F10A96689874C73023 /* SafetyPanel.swift */,
+			);
+			path = SafetyLab;
+			sourceTree = "<group>";
+		};
+		35E58518C9FE17447061C4CD /* AutoVerse3DTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4F3ED9E4BBA33D1C6282B27 /* DomainTests.swift */,
+			);
+			path = AutoVerse3DTests;
+			sourceTree = "<group>";
+		};
+		3AC74A5A80CE964669A59D40 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A65FB3B57793664FF7E3B414 /* Logic.swift */,
+				0F49DD443AB87340CB6E134E /* Models.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		3E80DB628EFD525C8BB80C42 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F445E8DC2492CF3ED00EB6B0 /* AIAssistant */,
+				BC0393D367E97FA67177A992 /* Customization */,
+				C2C50FDCB0E8496ADAE8AA95 /* EVExplorer */,
+				44E82AEFF7272692E035758D /* Explore */,
+				2070889B7457D16A531727C2 /* Home */,
+				74CE6F57E18C9E3070FD0A2F /* InteriorExplorer */,
+				194AEEF67631B95B41A38BB3 /* Learning */,
+				F44A61B611B6B8A49F0EBA30 /* MechanicalExplorer */,
+				B1E01053BE4DDE11036B047B /* MyGarage */,
+				2F27134A9C9844BC65D95FFB /* SafetyLab */,
+				EC96A53532B7F1B48264D8CC /* Showroom */,
+				E4A4EB1FB21B9B19F582A1EC /* VehicleViewer */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		44E82AEFF7272692E035758D /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				BA5F586FEF19B9ED20016BE8 /* ExploreScreen.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		46A8342D435A8ADF4DF94382 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				F9C56B63B34AF871E77E5336 /* PersistenceModels.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		4F3DD1C0F201C1FF7ED635B5 = {
+			isa = PBXGroup;
+			children = (
+				B60A0D0508650E2F27178CA9 /* AutoVerse3D */,
+				35E58518C9FE17447061C4CD /* AutoVerse3DTests */,
+				156DA9ABA720A6461087AB35 /* AutoVerse3DUITests */,
+				1105C95BC7DF399A1285631C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6A57389FB1160C6F0000DDA6 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				86E90B93A5A2EA70559401B5 /* Theme.swift */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		74CE6F57E18C9E3070FD0A2F /* InteriorExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				21969E007907739CA14E367E /* InteriorPanel.swift */,
+			);
+			path = InteriorExplorer;
+			sourceTree = "<group>";
+		};
+		774EF7718FAE71F0FB5F769D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F165C6D232BB2527C5AFFC2B /* ContentRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8EB3C08852AF208E21934946 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5A84AECB1E9B19A73BF5E331 /* Assets.xcassets */,
+				800079E1BA336F0A157AEBCB /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8F6898D952E6A2E9AC6418CF /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				8FD2E695FCBBB0DBCF84161D /* AppDependencies.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		AE6A176B39144D6F3F5350C2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E689449BA56620F225B49FAD /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		B1E01053BE4DDE11036B047B /* MyGarage */ = {
+			isa = PBXGroup;
+			children = (
+				0696BF2BE1CDA5888EDD6F4F /* GarageScreen.swift */,
+			);
+			path = MyGarage;
+			sourceTree = "<group>";
+		};
+		B60A0D0508650E2F27178CA9 /* AutoVerse3D */ = {
+			isa = PBXGroup;
+			children = (
+				D7E9FAF83F89EF7DA2952DF2 /* App */,
+				C16C9D39308B9789AE232EF1 /* Core */,
+				774EF7718FAE71F0FB5F769D /* Data */,
+				3AC74A5A80CE964669A59D40 /* Domain */,
+				3E80DB628EFD525C8BB80C42 /* Features */,
+				8EB3C08852AF208E21934946 /* Resources */,
+			);
+			path = AutoVerse3D;
+			sourceTree = "<group>";
+		};
+		BC0393D367E97FA67177A992 /* Customization */ = {
+			isa = PBXGroup;
+			children = (
+				64861A7A8683F3E465D839C2 /* CustomizationPanel.swift */,
+			);
+			path = Customization;
+			sourceTree = "<group>";
+		};
+		C16C9D39308B9789AE232EF1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E326EF12D2141E2F36CEF601 /* AssetManagement */,
+				8F6898D952E6A2E9AC6418CF /* DependencyInjection */,
+				6A57389FB1160C6F0000DDA6 /* DesignSystem */,
+				AE6A176B39144D6F3F5350C2 /* Networking */,
+				46A8342D435A8ADF4DF94382 /* Persistence */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C2C50FDCB0E8496ADAE8AA95 /* EVExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				7125993F80A49A18DFE5C58D /* EvLabScreen.swift */,
+			);
+			path = EVExplorer;
+			sourceTree = "<group>";
+		};
+		D7E9FAF83F89EF7DA2952DF2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DABC2CA7882D2FC4629741C0 /* AutoVerse3DApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E326EF12D2141E2F36CEF601 /* AssetManagement */ = {
+			isa = PBXGroup;
+			children = (
+				CDB96033976C3CC7D2A776C1 /* AssetRepository.swift */,
+			);
+			path = AssetManagement;
+			sourceTree = "<group>";
+		};
+		E4A4EB1FB21B9B19F582A1EC /* VehicleViewer */ = {
+			isa = PBXGroup;
+			children = (
+				E3CACCEF6BF18B3B8E1415BE /* RealityVehicleRenderer.swift */,
+				4E86827D1908E9840638CD6C /* VehicleViewerModel.swift */,
+				CC960EFEC258A8DDC4A96693 /* VehicleViewerScreen.swift */,
+			);
+			path = VehicleViewer;
+			sourceTree = "<group>";
+		};
+		EC96A53532B7F1B48264D8CC /* Showroom */ = {
+			isa = PBXGroup;
+			children = (
+				E19CFFE66F33AB33F96D9D2F /* ShowroomScreen.swift */,
+			);
+			path = Showroom;
+			sourceTree = "<group>";
+		};
+		F445E8DC2492CF3ED00EB6B0 /* AIAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				44D815670055220EB83C5D0B /* AssistantScreen.swift */,
+			);
+			path = AIAssistant;
+			sourceTree = "<group>";
+		};
+		F44A61B611B6B8A49F0EBA30 /* MechanicalExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				19DEE57CE1A85223DFD9D528 /* MechanicalPanel.swift */,
+			);
+			path = MechanicalExplorer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A321954FD35E6709363D2345 /* AutoVerse3DUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 066CA872FFEA8B3880D08494 /* Build configuration list for PBXNativeTarget "AutoVerse3DUITests" */;
+			buildPhases = (
+				2CD32B0F35D87A59F1F80549 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F7BA3C8543B7605E1D57352 /* PBXTargetDependency */,
+			);
+			name = AutoVerse3DUITests;
+			packageProductDependencies = (
+			);
+			productName = AutoVerse3DUITests;
+			productReference = 593F995B26A376F5C1DFE2DA /* AutoVerse3DUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B0793CB1BA74589BB866D7FD /* AutoVerse3DTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10AD586C53CE54C7F318939 /* Build configuration list for PBXNativeTarget "AutoVerse3DTests" */;
+			buildPhases = (
+				42C7BC4E67301FF55CF2E028 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268510CEFAD50A9C0D946C8B /* PBXTargetDependency */,
+			);
+			name = AutoVerse3DTests;
+			packageProductDependencies = (
+			);
+			productName = AutoVerse3DTests;
+			productReference = 4B9751578CF94D24D57649D2 /* AutoVerse3DTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC03E85AD271D96E6F2CB8A0 /* AutoVerse3D */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6884ABC7AF6AF666AE327BCB /* Build configuration list for PBXNativeTarget "AutoVerse3D" */;
+			buildPhases = (
+				D215D2F195CE1C856FA18DFD /* Copy shared contracts and approved iOS assets */,
+				3B8141C786FF89293E24E534 /* Sources */,
+				B94C4C24F321E96A29EBF7E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutoVerse3D;
+			packageProductDependencies = (
+			);
+			productName = AutoVerse3D;
+			productReference = BDD6BD42A77E55ED6FC6CDEE /* AutoVerse3D.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DCDFB2A76C6C26498881D4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					A321954FD35E6709363D2345 = {
+						DevelopmentTeam = "";
+						TestTargetID = CC03E85AD271D96E6F2CB8A0;
+					};
+					B0793CB1BA74589BB866D7FD = {
+						DevelopmentTeam = "";
+					};
+					CC03E85AD271D96E6F2CB8A0 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 3DE7DB2D6B5896020AB875DD /* Build configuration list for PBXProject "AutoVerse3D" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 4F3DD1C0F201C1FF7ED635B5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1105C95BC7DF399A1285631C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC03E85AD271D96E6F2CB8A0 /* AutoVerse3D */,
+				B0793CB1BA74589BB866D7FD /* AutoVerse3DTests */,
+				A321954FD35E6709363D2345 /* AutoVerse3DUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B94C4C24F321E96A29EBF7E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F34028C2AB9E087541023EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D215D2F195CE1C856FA18DFD /* Copy shared contracts and approved iOS assets */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy shared contracts and approved iOS assets";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Single source of truth: /shared content and the USDZ variants from /assets/build (GLB is Android-only).\nset -euo pipefail\nDEST=\"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\nmkdir -p \"$DEST\"\nrsync -a --delete \"${SRCROOT}/../shared/data/\" \"$DEST/data/\"\nrsync -a --delete \"${SRCROOT}/../shared/content/\" \"$DEST/content/\"\nrsync -a --delete \"${SRCROOT}/../assets/manifests/\" \"$DEST/manifests/\"\nrsync -a --delete --include='*.usdz' --include='*.scene.json' --exclude='*' \"${SRCROOT}/../assets/build/\" \"$DEST/build/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CD32B0F35D87A59F1F80549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C481592F566CC22F7B1D60CB /* CoreJourneyUITests.swift in Sources */,
+				F435FC132FE600155B528080 /* ScreenshotTour.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B8141C786FF89293E24E534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E09D74EF5BA132B032E27EFF /* APIClient.swift in Sources */,
+				6DD5228A7D59711EE634EC1A /* AppDependencies.swift in Sources */,
+				8F638DD717DB7324A719B142 /* AssetRepository.swift in Sources */,
+				4169781B90061910C8252F75 /* AssistantScreen.swift in Sources */,
+				113F597C7F7BA84D1416DC00 /* AutoVerse3DApp.swift in Sources */,
+				4C0459D05173ECE74C7502C7 /* ContentRepository.swift in Sources */,
+				E622E3132ED934F2767350CB /* CustomizationPanel.swift in Sources */,
+				A4C13370408CE9D2F77A7666 /* EvLabScreen.swift in Sources */,
+				426DD9206338D870B441D87B /* ExploreScreen.swift in Sources */,
+				62D0AD39CF072CB2640B42F9 /* GarageScreen.swift in Sources */,
+				0411F9C75331D2C1A2D99998 /* HomeScreen.swift in Sources */,
+				081509579EE498B22C6AB80D /* InteriorPanel.swift in Sources */,
+				FCE5FE9B66AB7CC275FAB4B8 /* LearningScreens.swift in Sources */,
+				4721A57DE47E98448CA00CCB /* Logic.swift in Sources */,
+				2A891DC148CAA30702840824 /* MechanicalPanel.swift in Sources */,
+				EDE4FD109FC0C9DEB25D436B /* Models.swift in Sources */,
+				B43A06C3E21CBA1BA851A571 /* PersistenceModels.swift in Sources */,
+				4F3DF242C18C3547F9EAB746 /* RealityVehicleRenderer.swift in Sources */,
+				B39D5B69B5388A645AD2667D /* SafetyPanel.swift in Sources */,
+				45E9E8C8304807C44216751F /* ShowroomScreen.swift in Sources */,
+				3357773FC846DCE19A8F1A15 /* Theme.swift in Sources */,
+				E89846213544017EF7BC9B2E /* VehicleViewerModel.swift in Sources */,
+				F226DC1D104C9703E08225D2 /* VehicleViewerScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42C7BC4E67301FF55CF2E028 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F867AB7EA1340632312C18 /* DomainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268510CEFAD50A9C0D946C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC03E85AD271D96E6F2CB8A0 /* AutoVerse3D */;
+			targetProxy = 87215558081E2A23F6A4AF5A /* PBXContainerItemProxy */;
+		};
+		9F7BA3C8543B7605E1D57352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC03E85AD271D96E6F2CB8A0 /* AutoVerse3D */;
+			targetProxy = 87D3FCE82AFBC5726285782E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		23DB852E9319559B9FD44386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		3216C703674E76BD7A38E4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AutoVerse3D/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse3d.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4116DD6B7861C6E09C397600 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = AutoVerse3D/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse3d.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C24065C88FFD4424DCE01A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse3d.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoVerse3D.app/AutoVerse3D";
+			};
+			name = Debug;
+		};
+		6A9D4069F5AF8F5CAAD655BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7E8F9697EAEBC42420E59257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse3d.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AutoVerse3D.app/AutoVerse3D";
+			};
+			name = Release;
+		};
+		9A945F797F772B264BD02B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse3d.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoVerse3D;
+			};
+			name = Release;
+		};
+		D503A203582ECC5EB74C686C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.autoverse3d.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AutoVerse3D;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		066CA872FFEA8B3880D08494 /* Build configuration list for PBXNativeTarget "AutoVerse3DUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D503A203582ECC5EB74C686C /* Debug */,
+				9A945F797F772B264BD02B7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3DE7DB2D6B5896020AB875DD /* Build configuration list for PBXProject "AutoVerse3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A9D4069F5AF8F5CAAD655BB /* Debug */,
+				23DB852E9319559B9FD44386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6884ABC7AF6AF666AE327BCB /* Build configuration list for PBXNativeTarget "AutoVerse3D" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3216C703674E76BD7A38E4A5 /* Debug */,
+				4116DD6B7861C6E09C397600 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C10AD586C53CE54C7F318939 /* Build configuration list for PBXNativeTarget "AutoVerse3DTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C24065C88FFD4424DCE01A9 /* Debug */,
+				7E8F9697EAEBC42420E59257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DCDFB2A76C6C26498881D4F /* Project object */;
+}

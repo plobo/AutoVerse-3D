@@ -1,0 +1,82 @@
+name: AutoVerse3D
+options:
+  bundleIdPrefix: com.autoverse3d
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+    ENABLE_USER_SCRIPT_SANDBOXING: NO
+    DEVELOPMENT_TEAM: ""
+targets:
+  AutoVerse3D:
+    type: application
+    platform: iOS
+    sources:
+      - path: AutoVerse3D
+    preBuildScripts:
+      - name: Copy shared contracts and approved iOS assets
+        basedOnDependencyAnalysis: false
+        script: |
+          # Single source of truth: /shared content and the USDZ variants from /assets/build (GLB is Android-only).
+          set -euo pipefail
+          DEST="${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
+          mkdir -p "$DEST"
+          rsync -a --delete "${SRCROOT}/../shared/data/" "$DEST/data/"
+          rsync -a --delete "${SRCROOT}/../shared/content/" "$DEST/content/"
+          rsync -a --delete "${SRCROOT}/../assets/manifests/" "$DEST/manifests/"
+          rsync -a --delete --include='*.usdz' --include='*.scene.json' --exclude='*' "${SRCROOT}/../assets/build/" "$DEST/build/"
+    info:
+      path: AutoVerse3D/Resources/Info.plist
+      properties:
+        CFBundleDisplayName: AutoVerse 3D
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        UISupportedInterfaceOrientations~ipad: [UIInterfaceOrientationPortrait, UIInterfaceOrientationPortraitUpsideDown, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
+        # Development backend. Release builds must use an HTTPS host (see docs/IOS_SETUP.md).
+        API_BASE_URL: http://localhost:8787/
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.autoverse3d.app
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+  AutoVerse3DTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [AutoVerse3DTests]
+    dependencies:
+      - target: AutoVerse3D
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.autoverse3d.tests
+  AutoVerse3DUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [AutoVerse3DUITests]
+    dependencies:
+      - target: AutoVerse3D
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.autoverse3d.uitests
+        TEST_TARGET_NAME: AutoVerse3D
+schemes:
+  AutoVerse3D:
+    build:
+      targets:
+        AutoVerse3D: all
+        AutoVerse3DTests: [test]
+        AutoVerse3DUITests: [test]
+    test:
+      targets: [AutoVerse3DTests, AutoVerse3DUITests]
+      gatherCoverageData: true
