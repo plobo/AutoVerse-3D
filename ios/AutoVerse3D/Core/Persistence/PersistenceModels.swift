@@ -67,7 +67,8 @@ final class InstalledPack {
 }
 
 enum Persistence {
-    static let schema = Schema([SavedConfiguration.self, ModuleProgressRecord.self, InstalledPack.self])
+    // Computed: SwiftData's Schema is not Sendable on older SDKs (Xcode 16), so it cannot be a stored static.
+    static var schema: Schema { Schema([SavedConfiguration.self, ModuleProgressRecord.self, InstalledPack.self]) }
 
     @MainActor
     static func makeContainer(inMemory: Bool = false) throws -> ModelContainer {
