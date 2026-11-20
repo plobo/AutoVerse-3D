@@ -62,3 +62,5 @@ cd ios && xcodegen generate && open AutoVerse3D.xcodeproj
 | `screenshots/` | Emulator/simulator captures of every module |
 
 Contributing: [CONTRIBUTING.md](CONTRIBUTING.md).
+
+License: [MIT](LICENSE).

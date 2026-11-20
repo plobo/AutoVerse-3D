@@ -75,7 +75,7 @@ _Last updated: 2026-11-19._ Legend: ✅ done and tested · 🟡 implemented, nee
 
 ## Blockers / next steps
 
-1. Owner review: approve licence records; confirm vehicle names are trademark-clear; choose a repository/content licence.
+1. Owner review: approve licence records; confirm vehicle names are trademark-clear.
 2. Run on physical devices: iOS 17 minimum device, Android API 26 device, low/mid/high tiers; record FPS, memory, load time,
    thermal (plan §6).
 3. VoiceOver/TalkBack audit; Dynamic Type stress test.
